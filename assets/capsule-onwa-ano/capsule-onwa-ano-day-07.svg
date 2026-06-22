@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <!-- Repeating nsibidi/uli background pattern -->
+    <pattern id="uliBg" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(7)">
+      <rect width="80" height="80" fill="#F3E7CF" opacity="0.14"/>
+      <circle cx="40" cy="40" r="14" fill="none" stroke="#1e1e65" stroke-width="0.6" opacity="0.25"/>
+      <path d="M8 40 Q28 8 40 40 T72 40" fill="none" stroke="#222020" stroke-width="0.5" opacity="0.18"/>
+      <circle cx="40" cy="40" r="3.5" fill="#222020" opacity="0.2"/>
+      <path d="M18 18 L62 62 M62 18 L18 62" stroke="#222020" stroke-width="0.4" opacity="0.12"/>
+      <circle cx="18" cy="62" r="2" fill="#1e1e65" opacity="0.15"/>
+      <circle cx="62" cy="18" r="2" fill="#1e1e65" opacity="0.15"/>
+    </pattern>
+    <!-- Shadow filter for dome -->
+    <filter id="domeShadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#222020" flood-opacity="0.3"/>
+    </filter>
+    <!-- Shadow filter for body -->
+    <filter id="bodyShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#222020" flood-opacity="0.25"/>
+    </filter>
+    <!-- Shadow for text elements -->
+    <filter id="textShadow" x="-5%" y="-5%" width="115%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#222020" flood-opacity="0.15"/>
+    </filter>
+    <!-- Inner glow for dome -->
+    <radialGradient id="domeGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#222020" stop-opacity="0.08"/>
+    </radialGradient>
+    <!-- Card body clip -->
+    <clipPath id="bodyClip">
+      <rect x="180" y="768" width="720" height="1209.6000000000001" rx="64"/>
+    </clipPath>
+  </defs>
+
+  <!-- ══ Full-card repeating background ══ -->
+  <rect width="1080" height="1920" fill="#F3E7CF"/>
+  <rect width="1080" height="1920" fill="url(#uliBg)"/>
+
+  <!-- ══ 1. DOME (coloured cap with shadow + inner glow) ══ -->
+  <g filter="url(#domeShadow)">
+    <path d="M180 441.6 A360 375.36 0 0 1 900 441.6 Q540 463.6 180 441.6"
+      fill="#da3835" stroke="#222020" stroke-width="3.5"/>
+    <path d="M180 441.6 A360 375.36 0 0 1 900 441.6 Q540 457.6 180 441.6"
+      fill="url(#domeGlow)"/>
+  </g>
+
+  <!-- textSymbol letter in dome (faint) -->
+  <text x="540" y="336.4992" text-anchor="middle"
+    font-family="'Segoe UI','Noto Sans',sans-serif" font-weight="900"
+    font-size="140" fill="#ffffff" opacity="0.22">O</text>
+
+  
+
+  <!-- ══ 2. LOGO BAND (nsibidi-patterned) ══ -->
+  <rect x="180" y="441.6" width="720" height="326.40000000000003" fill="url(#uliBg)"/>
+  <rect x="180" y="441.6" width="720" height="326.40000000000003" fill="#ffffff" opacity="0.87"/>
+  <!-- textSymbol letter -->
+  <text x="540" y="643.9680000000001" text-anchor="middle"
+    font-family="'Segoe UI','Noto Sans',sans-serif" font-weight="900"
+    font-size="96" fill="#1e1e65" filter="url(#textShadow)">O</text>
+  <!-- Divider -->
+  <line x1="244" y1="768" x2="836" y2="768"
+    stroke="#222020" stroke-width="2"/>
+
+  <!-- ══ 3. DATE BAND ══ -->
+  <g clip-path="url(#bodyClip)">
+    <rect x="180" y="768" width="720" height="672" fill="#ffffff"/>
+
+    <!-- Market name header -->
+    <text x="540" y="833" text-anchor="middle"
+      font-family="'Source Sans 3','Segoe UI',sans-serif" font-weight="800"
+      font-size="62" fill="#f05a57" letter-spacing="3" filter="url(#textShadow)">Èke — 7</text>
+
+    <!-- Big number "day/month" -->
+    <text x="490" y="1028" text-anchor="middle"
+      font-family="'Georgia','Noto Serif',serif" font-weight="700"
+      font-size="240" fill="#222020" filter="url(#textShadow)">7</text>
+    <text x="640" y="988" text-anchor="start"
+      font-family="'Georgia','Noto Serif',serif" font-weight="600"
+      font-size="52" fill="#646466">/4</text>
+
+    <!-- Day-of-year superscript -->
+    <text x="660" y="888" text-anchor="start"
+      font-family="'Source Sans 3','Segoe UI',sans-serif" font-weight="700"
+      font-size="32" fill="#646466">91</text>
+
+    <!-- Body focus -->
+    <text x="540" y="1108" text-anchor="middle"
+      font-family="'Georgia','Noto Serif',serif" font-weight="600" font-style="italic"
+      font-size="32" fill="#222020">Temporal lobe</text>
+
+    <!-- Moon glyph -->
+    <g transform="translate(420, 1158)">
+      <circle cx="24" cy="24" r="22" fill="none" stroke="#222020" stroke-width="2"/>
+      <path d="M24 2 A22 22 0 0 0 0 24 46 Z"
+        fill="#222020" opacity="0.85"/>
+    </g>
+    <text x="485" y="1188"
+      font-family="'Source Sans 3','Segoe UI',sans-serif" font-weight="600"
+      font-size="24" fill="#646466">New</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="244" y1="1440" x2="836" y2="1440"
+    stroke="#222020" stroke-width="2"/>
+
+  <!-- ══ 4. MONTH-THEME BAND ══ -->
+  <text x="540" y="1526.4" text-anchor="middle"
+    font-family="'Source Sans 3','Segoe UI',sans-serif" font-weight="800"
+    font-size="27" fill="#f05a57" letter-spacing="2">MONTH FOUR (4): FORM · CELEBRATE TOGETHERNESS</text>
+  <text x="540" y="1597.44" text-anchor="middle"
+    font-family="'Georgia','Noto Serif',serif" font-weight="600" font-style="italic"
+    font-size="24" fill="#646466">Ọ́nwá Ánọ̄ · Ìzù 2</text>
+
+  <!-- Divider -->
+  <line x1="244" y1="1632" x2="836" y2="1632"
+    stroke="#222020" stroke-width="2"/>
+
+  <!-- ══ 5. CELEBRATION PROMPT · REFLECTION ══ -->
+  <text x="540" y="1682" text-anchor="middle"
+    font-family="'Georgia','Noto Serif',serif" font-weight="600" font-style="italic"
+    font-size="23" fill="#222020" filter="url(#textShadow)">
+    <tspan x="540" dy="0">Which sounds, stories and memories shape my</tspan><tspan x="540" dy="32">form?</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="244" y1="1862.4" x2="836" y2="1862.4"
+    stroke="#222020" stroke-width="2"/>
+
+  <!-- ══ 6. FOOTER ══ -->
+  <text x="540" y="1920" text-anchor="middle"
+    font-family="'Georgia','Noto Serif',serif" font-weight="600"
+    font-size="22" fill="#646466">igbokal.com</text>
+
+  <!-- Foot accent tab -->
+  <rect x="512" y="1973.6000000000001" width="56" height="7" rx="3" fill="#da3835"/>
+
+  <!-- ══ Outer body outline (with shadow) ══ -->
+  <g filter="url(#bodyShadow)">
+    <rect x="180" y="441.6" width="720" height="1209.6000000000001"
+      rx="64" fill="none" stroke="#222020" stroke-width="3.5"/>
+  </g>
+
+  <!-- ══ Dome-bottom closure arc ══ -->
+  <path d="M180 441.6 Q540 457.6 900 441.6"
+    fill="none" stroke="#222020" stroke-width="2.5"/>
+</svg>
