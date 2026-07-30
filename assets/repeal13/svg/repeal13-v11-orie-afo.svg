@@ -9,9 +9,13 @@
       <stop offset="0" stop-color="#66daff" stop-opacity="0.16"/>
       <stop offset="1" stop-color="#66daff" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#66daff"/>
+      <stop offset="1" stop-color="#77e743"/>
+    </linearGradient>
   </defs>
-  <rect x="0" y="0" width="1080" height="1920" fill="url(#bg)"/>
-  <rect x="0" y="0" width="1080" height="1920" fill="url(#wash)"/>
+  <rect x="0" y="0" width="1080" height="1920" rx="0" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1080" height="1920" rx="0" fill="url(#wash)"/>
   <g transform="translate(0,0) scale(1,1)">
   <g opacity="0.055">
     <polygon points="0,0 1080,0 540,806.4" fill="#009B3A"></polygon>
@@ -34,8 +38,8 @@
 </g>
   <text x="130.92" y="164.17" text-anchor="start" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="92" font-weight="900" letter-spacing="1" fill="rgb(255, 255, 255)">1898 OBEAH LAW</text>
   <text x="265.05" y="258" text-anchor="start" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="92" font-weight="900" letter-spacing="4" fill="rgb(254, 209, 0)">MUST FALL</text>
-  <rect x="56" y="329" width="968" height="10" rx="5" fill="rgb(102, 218, 255)"/>
-  <rect x="307.27" y="351.5" width="465.45" height="65" rx="32.5" fill="rgb(102, 218, 255)"/>
+  <rect x="56" y="329" width="968" height="10" rx="5" fill="url(#accent)"/>
+  <rect x="307.27" y="351.5" width="465.45" height="65" rx="32.5" fill="url(#accent)"/>
   <text x="337.27" y="384" text-anchor="start" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="32" font-weight="800" letter-spacing="5" fill="rgb(6, 48, 63)">VIOLATION 11 OF 13</text>
   <text x="540" y="486.31" text-anchor="middle" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="80" font-weight="900" fill="rgb(255, 255, 255)">Freedom of</text>
   <text x="540" y="569.5" text-anchor="middle" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="80" font-weight="900" fill="rgb(255, 255, 255)">expression</text>
@@ -64,7 +68,7 @@
   <text x="329.31" y="1629.5" text-anchor="start" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="23" font-weight="500" fill="rgba(255, 255, 255, 0.44)">Supporting the Constitutional Challenge</text>
   <text x="234.73" y="1681.5" text-anchor="start" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="31" font-weight="600" font-style="italic" fill="rgb(254, 209, 0)">“Get up, stand up: stand up for your rights!”</text>
   <text x="468.81" y="1727" text-anchor="start" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="22" font-weight="500" fill="rgba(255, 255, 255, 0.42)">— Bob Marley</text>
-  <rect x="56" y="1764" width="968" height="85" rx="42.5" fill="rgb(102, 218, 255)"/>
+  <rect x="56" y="1764" width="968" height="85" rx="42.5" fill="url(#accent)"/>
   <text x="539.99" y="1806.5" text-anchor="middle" dominant-baseline="central" font-family=""Segoe UI", "Noto Sans", "Helvetica Neue", system-ui, sans-serif" font-size="40" font-weight="900" letter-spacing="2" fill="rgb(6, 48, 63)">#REPEAL13 · SIGN THE PETITION</text>
   <rect x="0" y="1849" width="1080" height="23.66" rx="0" fill="rgb(0, 155, 58)"/>
   <rect x="0" y="1872.66" width="1080" height="23.67" rx="0" fill="rgb(254, 209, 0)"/>
