@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "authorityDate": "2026-08-19",
+  "source": {
+    "kind": "figma-get-design-context-export",
+    "fileKey": "TTNkBhwPq88j9wRgrGOCAt",
+    "fileVersion": "2388014748743450779",
+    "componentNodeId": "188:143",
+    "variantsFrameNodeId": "325:809"
+  },
+  "sourcePixelSize": 160,
+  "renderedPixelSize": 80,
+  "runtimeAcceptance": false,
+  "assets": [
+    { "file": "moon-new.png", "sha256": "5c2b32edf1eb9604e7671cfb3aa282039e46258b006b363ad51206f6cb02a542" },
+    { "file": "moon-waxing-crescent.png", "sha256": "a22b2434af914b4614a662cf41c3593eec127d64c5d5ef622777e301d0ca22d5" },
+    { "file": "moon-first-quarter.png", "sha256": "7366ac926de32eeeac6695ee65fee162018af8df506a8539dc7288e4697e7916" },
+    { "file": "moon-waxing-gibbous.png", "sha256": "e0ec8be9905cf945010c5ce574279dfc9d442f21eb1a3ccce7dab27c909d05fe" },
+    { "file": "moon-full.png", "sha256": "4e8a34bb0b1465270d07c45eb95a661f3c28ed95d994a55748dbe805ae6c1c8e" },
+    { "file": "moon-waning-gibbous.png", "sha256": "b0cf9eecf7116ba740e853852a7dc8e46f3984bbe4e375dd9208b6bb4ffff925" },
+    { "file": "moon-last-quarter.png", "sha256": "7cad8ce186498ba113017ddfde1d4e4eafdc89dfc223e34813e8781446d9f29c" },
+    { "file": "moon-waning-crescent.png", "sha256": "2555a3a899ad7985dd948751c5008530d502642e414bfeb81efed6e03ad4c360" }
+  ]
+}
