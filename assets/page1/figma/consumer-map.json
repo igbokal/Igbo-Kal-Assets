@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "localAlias": "@igbokal-page1-assets",
+  "localAliasTargetFromWorkspace": "submodules/Igbo-Kal-Assets/assets/page1/figma",
+  "sharedAlias": "@igbokal-assets",
+  "sharedAliasTargetFromWorkspace": "submodules/Igbo-Kal-Assets/assets",
+  "publishedBaseUrl": "https://igbokal.github.io/Igbo-Kal-Assets/assets/page1/figma/",
+  "mappings": [
+    {
+      "sourceRoot": "apps/pwa/src-app/assets/figma/36-18",
+      "assetRoot": "desktop-36-18",
+      "files": ["logo-mark.png", "messages.gif", "messages-reduced.png", "month-wheel-orbit.png", "profile-symbol.svg", "threshold-guy.svg"]
+    },
+    {
+      "sourceRoot": "apps/pwa/src-app/assets/figma/mobile-calendar-102-81",
+      "assetRoot": "mobile-calendar-102-81",
+      "files": ["chakra-crown.svg", "chakra-heart.svg", "chakra-root.svg", "chakra-sacral.svg", "chakra-solar-plexus.svg", "chakra-third-eye.svg", "chakra-throat.svg", "direction-east.svg", "direction-north.svg", "direction-south.svg", "direction-west.svg", "endcap-afo.svg", "endcap-orie.svg", "header-menu.svg", "header-profile.svg", "season-autumn.svg", "season-spring.svg", "season-summer.svg", "season-winter.svg", "tail-afo.svg", "tail-eke.svg", "tail-nkwo.svg", "tail-orie.svg"]
+    },
+    {
+      "sourceRoot": "apps/pwa/src-app/assets/figma/mobile-kalendar-navigation-226-898",
+      "assetRoot": "mobile-kalendar-navigation-226-898",
+      "files": ["threshold-guy.svg", "year-orbit.png"]
+    },
+    {
+      "sourceRoot": "apps/pwa/src-app/assets/figma/mobile-notes-129-122",
+      "assetRoot": "mobile-notes-129-122",
+      "files": ["add.svg", "search.svg"]
+    },
+    {
+      "sourceRoot": "apps/pwa/src-app/assets/figma/mobile-profile-146-133",
+      "assetRoot": "mobile-profile-146-133",
+      "files": ["avatar.png", "horoscope-taurus.png", "market-water.png", "moon-new.png"]
+    },
+    {
+      "sourceRoot": "apps/pwa/src-app/assets/figma/mobile-reflection-102-560",
+      "assetRoot": "mobile-reflection-102-560",
+      "files": ["close.svg", "empty-sparkles.svg", "izu-afo.svg", "izu-eke.svg", "izu-nkwo.svg", "izu-orie.svg", "splash-bottom.svg", "splash-top.svg"]
+    },
+    {
+      "sourceRoot": "apps/pwa/src-app/assets/figma/mobile-today-336-995",
+      "assetRoot": "mobile-today-336-995",
+      "files": ["moon.png", "nav-discover.svg", "nav-home.svg", "nav-notes.svg", "nav-profile.svg", "threshold-guy.svg"]
+    },
+    {
+      "sourceRoot": "apps/admin/public/figma/capsules",
+      "assetRoot": "admin/capsules",
+      "files": ["chevron-back.svg", "chevron-forward.svg", "close.svg", "history-rule.svg", "horizontal-rule.svg", "logo.svg", "vertical-rule.svg"]
+    },
+    {
+      "sourceRoot": "apps/admin/public/figma/dashboard",
+      "assetRoot": "admin/dashboard",
+      "files": ["arrow-up-kapsules.svg", "arrow-up-users.svg", "bell.svg", "book-open.png", "check.svg", "dashboard.svg", "logo.png", "published-dot.svg", "scheduled-dot.svg", "search.svg"]
+    },
+    {
+      "sourceRoot": "apps/admin/public/figma/glossary",
+      "assetRoot": "admin/glossary",
+      "files": ["bell.svg", "book-open.svg", "chevron-down.svg", "close.svg", "dashboard.svg", "edit.svg", "logo.png", "plus.svg", "search.svg", "trash.svg"]
+    },
+    {
+      "sourceRoot": "apps/admin/public/figma/users",
+      "assetRoot": "admin/users",
+      "files": ["chevron-admin.svg", "chevron-app.svg", "delete-alert.svg", "plus.svg", "search-admin.svg", "search-app.svg"]
+    },
+    {
+      "sourceRoot": "apps/pwa/public",
+      "assetRoot": "identity",
+      "renames": [
+        {"source": "logo192.png", "asset": "igbokal-app-icon-192.png"},
+        {"source": "logo512.png", "asset": "igbokal-app-icon-512.png"}
+      ]
+    }
+  ],
+  "sourceReuses": [
+    {
+      "source": "apps/pwa/src-app/assets/figma/mobile-day-detail-159-340/close.svg",
+      "assetRepositoryPath": "assets/page1/figma/mobile-reflection-102-560/close.svg",
+      "consumerImport": "@igbokal-page1-assets/mobile-reflection-102-560/close.svg?url",
+      "bytes": 1626,
+      "sha256": "7fb79214ae838ee5e1339f78fe1569ae160743e3c48a185ac19eba4da3c2f2c7"
+    },
+    {
+      "source": "apps/pwa/src-app/assets/figma/mobile-day-detail-159-340/pattern.svg",
+      "assetRepositoryPath": "assets/page1/figma/mobile-reflection-102-560/splash-bottom.svg",
+      "consumerImport": "@igbokal-page1-assets/mobile-reflection-102-560/splash-bottom.svg?url",
+      "bytes": 10171,
+      "sha256": "1b0143629b1f213f6b42d983656267d67ebe85749acd73e531829dc4171c599d"
+    }
+  ],
+  "governedCollections": [
+    {
+      "figmaComponentNode": "188:143",
+      "assetRepositoryRoot": "assets/page1/moon-phases",
+      "manifestRepositoryPath": "assets/page1/moon-phases/manifest.json",
+      "consumerImportPrefix": "@igbokal-assets/page1/moon-phases/"
+    }
+  ],
+  "exactExternalReuses": [
+    {
+      "figmaFrameNode": "102:711",
+      "figmaAssetNode": "114:78",
+      "figmaLayer": "nkwo 1",
+      "assetRepositoryPath": "assets/images/nkwo.png",
+      "consumerImport": "@igbokal-assets/images/nkwo.png?url",
+      "bytes": 51664,
+      "sha256": "2df80fb57abde1194dc56adb74ad3a3fc496bf00f8026e10fc9ecca04962bd23"
+    }
+  ],
+  "excludedSources": [
+    {
+      "source": "apps/pwa/src-app/assets/google-g.png",
+      "reason": "Third-party service mark; Google OAuth and brand authority are not approved."
+    },
+    {
+      "source": "apps/pwa/src-app/assets/igbokal-app-icon.png",
+      "reason": "Byte-identical runtime duplicate of apps/pwa/public/logo192.png; use the governed identity pair."
+    }
+  ]
+}
