@@ -45,6 +45,28 @@ function pngDimensions(buffer) {
   };
 }
 
+function assertMediaSignature(path, buffer) {
+  const extension = path.split('.').at(-1)?.toLowerCase();
+  const prefix = buffer.subarray(0, 12);
+  const suffix = buffer.subarray(Math.max(0, buffer.length - 2));
+  const signatures = {
+    gif: () => prefix.subarray(0, 6).toString('ascii') === 'GIF87a'
+      || prefix.subarray(0, 6).toString('ascii') === 'GIF89a',
+    jpg: () => prefix[0] === 0xff && prefix[1] === 0xd8
+      && suffix[0] === 0xff && suffix[1] === 0xd9,
+    jpeg: () => prefix[0] === 0xff && prefix[1] === 0xd8
+      && suffix[0] === 0xff && suffix[1] === 0xd9,
+    png: () => prefix.subarray(0, 8).toString('hex') === '89504e470d0a1a0a',
+    svg: () => /^(?:<\?xml[^>]*>\s*)?<svg(?:\s|>)/u.test(buffer.toString('utf8').replace(/^\uFEFF/u, '').trimStart()),
+    webp: () => prefix.subarray(0, 4).toString('ascii') === 'RIFF'
+      && prefix.subarray(8, 12).toString('ascii') === 'WEBP',
+  };
+
+  if (!signatures[extension]?.()) {
+    throw new Error(`Asset extension does not match its media signature: ${path}`);
+  }
+}
+
 const absoluteFiles = (await walk(assetRoot)).sort();
 const files = [];
 const consumerMap = JSON.parse(await readFile(consumerMapPath, 'utf8'));
@@ -67,6 +89,7 @@ for (const absolutePath of absoluteFiles) {
   }
 
   const contents = await readFile(absolutePath);
+  assertMediaSignature(path, contents);
   files.push({
     path,
     bytes: info.size,
@@ -84,7 +107,12 @@ for (const [name, expectedSize] of [
   }
 }
 
-async function verifiedRepositoryAsset(repositoryPath, expectedBytes, expectedSha256) {
+async function verifiedRepositoryAsset(
+  repositoryPath,
+  expectedBytes,
+  expectedSha256,
+  { enforceMaxBytes = true } = {},
+) {
   if (
     ONE_DRIVE_PATTERN.test(repositoryPath)
     || repositoryPath.startsWith('/')
@@ -98,6 +126,9 @@ async function verifiedRepositoryAsset(repositoryPath, expectedBytes, expectedSh
     throw new Error(`Repository asset escaped root: ${repositoryPath}`);
   }
   const info = await stat(absolutePath);
+  if (enforceMaxBytes && info.size > MAX_BYTES) {
+    throw new Error(`External reuse exceeds 25 MiB: ${repositoryPath} (${info.size} bytes)`);
+  }
   const contents = await readFile(absolutePath);
   const sha256 = createHash('sha256').update(contents).digest('hex');
   if (info.size !== expectedBytes || sha256 !== expectedSha256) {
@@ -155,6 +186,50 @@ for (const reuse of consumerMap.sourceReuses ?? []) {
   if (reuse.consumerImport.includes('..')) {
     throw new Error(`Consumer reuse import may not traverse: ${reuse.consumerImport}`);
   }
+}
+
+for (const derivative of consumerMap.optimizedDerivatives ?? []) {
+  if (
+    derivative.sourceStatus !== 'retired-oversize-bytes-replaced-in-place'
+    || derivative.sourceBytes <= MAX_BYTES
+    || !/^[a-f0-9]{64}$/.test(derivative.sourceSha256)
+    || ONE_DRIVE_PATTERN.test(derivative.retiredSourceRepositoryPath)
+    || derivative.retiredSourceRepositoryPath.startsWith('/')
+    || derivative.retiredSourceRepositoryPath.includes('..')
+  ) {
+    throw new Error(`Invalid retired-source provenance: ${derivative.figmaAssetNode}`);
+  }
+  await verifiedRepositoryAsset(
+    derivative.assetRepositoryPath,
+    derivative.bytes,
+    derivative.sha256,
+  );
+  if (derivative.consumerImport.includes('..')) {
+    throw new Error(`Optimized derivative import may not traverse: ${derivative.consumerImport}`);
+  }
+}
+
+for (const derivative of consumerMap.compatibilityDerivatives ?? []) {
+  if (
+    derivative.retiredSourceBytes <= MAX_BYTES
+    || !/^[a-f0-9]{64}$/.test(derivative.retiredSourceSha256)
+    || derivative.consumerUrlPath !== derivative.assetRepositoryPath
+  ) {
+    throw new Error(`Invalid compatibility provenance: ${derivative.figmaAssetNode}`);
+  }
+  reusedFiles.push({
+    ...await verifiedRepositoryAsset(
+      derivative.assetRepositoryPath,
+      derivative.bytes,
+      derivative.sha256,
+    ),
+    authority: {
+      figmaFrameNode: derivative.figmaFrameNode,
+      figmaAssetNode: derivative.figmaAssetNode,
+      figmaLayer: derivative.figmaLayer,
+      derivativeOfRetiredSha256: derivative.retiredSourceSha256,
+    },
+  });
 }
 
 reusedFiles.sort((left, right) => left.path.localeCompare(right.path));
@@ -233,11 +308,11 @@ if (publicationProof.status === 'unpublished') {
 
 if (process.argv.includes('--write')) {
   await writeFile(manifestPath, serializedManifest, 'utf8');
-  console.log(`Wrote ${files.length} corpus assets and ${reusedFiles.length} zero-copy reuses to ${relative(repositoryRoot, manifestPath)}.`);
+  console.log(`Wrote ${files.length} corpus assets and ${reusedFiles.length} governed repository assets to ${relative(repositoryRoot, manifestPath)}.`);
 } else {
   const recorded = JSON.parse(await readFile(manifestPath, 'utf8'));
   if (JSON.stringify(recorded) !== JSON.stringify(manifest)) {
     throw new Error('Page 1 Figma asset manifest is stale.');
   }
-  console.log(`Verified ${files.length} Page 1 Figma assets and ${reusedFiles.length} zero-copy reuses.`);
+  console.log(`Verified ${files.length} Page 1 Figma assets and ${reusedFiles.length} governed repository assets.`);
 }

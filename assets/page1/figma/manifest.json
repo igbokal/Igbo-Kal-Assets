@@ -174,6 +174,36 @@
       "sha256": "5c969671f15fedcf6f6d3aad695c72a580972b8f81b2a9f143091bbf5ad1c02a"
     },
     {
+      "path": "commercial/upgrade-check.svg",
+      "bytes": 317,
+      "sha256": "8c1d138d02333299a086fbfb42169058e11b5d8cae5366bdda4b87d34a726fdd"
+    },
+    {
+      "path": "commercial/upgrade-sparkles.svg",
+      "bytes": 1807,
+      "sha256": "d990df593d02a39f1e59dca225c0d11099b91085d02d31e351e3596dfc66faf3"
+    },
+    {
+      "path": "components/component-22/cardinal.svg",
+      "bytes": 4142,
+      "sha256": "61c2ba7e87dc77afb303214391cbe2911931f3b489af28584f0f1effe8a829e3"
+    },
+    {
+      "path": "components/gif/drumming-loop.webp",
+      "bytes": 21280180,
+      "sha256": "e8cab63c747b2ccafa7d72e89c881909198a138a2dda01fbd0c6cb5c2bee00ae"
+    },
+    {
+      "path": "components/gif/drumming-reduced.png",
+      "bytes": 2135180,
+      "sha256": "9e0e2b63db1dcf4054487aeb0503c5fb31964498e41bbda299342b86b1401f5f"
+    },
+    {
+      "path": "components/gif/nsibidi-reduced.png",
+      "bytes": 1486919,
+      "sha256": "68111b46fc40c28214288c0c4b73d522810fd07571121a2c9e84ca4ff1139495"
+    },
+    {
       "path": "desktop-36-18/logo-mark.png",
       "bytes": 8172,
       "sha256": "8d2a31a3b779f2432436e707cf5b505eee49a7d49adeb1c2e70809657166a0dd"
@@ -349,7 +379,7 @@
       "sha256": "4bed469188b12028c32878f349036d070d252197e92dd91e2a23a0500ec7c306"
     },
     {
-      "path": "mobile-profile-146-133/avatar.png",
+      "path": "mobile-profile-146-133/avatar.jpg",
       "bytes": 46954,
       "sha256": "6a3c8cb7a00dfad6bf0d27b161b265187f5091d796ad66e0840a7c04fc93de30"
     },
@@ -440,6 +470,37 @@
     }
   ],
   "reusedFiles": [
+    {
+      "path": "assets/gif/14fd1b71d87b52cf9d40eed7891201d0.gif",
+      "bytes": 19710810,
+      "sha256": "85d0286cea6bf8aec7cc37b559eaac42aad5ea31901d09a8999350b2153408af",
+      "authority": {
+        "figmaFrameNode": "253:3011",
+        "figmaAssetNode": "253:3010",
+        "figmaLayer": "drumming",
+        "derivativeOfRetiredSha256": "c3e7e23b9a6b0c090e7a315c2dc40f84875a35d6abd7bb524d11e2ba9dddfaef"
+      }
+    },
+    {
+      "path": "assets/gif/8a2f3abe77bdd81b4086ed2b1fd07fcf.gif",
+      "bytes": 20098547,
+      "sha256": "06aef0c62a22f73a77fd6cc61edd58cf3f7c9ee2c768fc6cc71c5250c6b53805",
+      "authority": {
+        "figmaFrameNode": "253:3011",
+        "figmaAssetNode": "253:3008",
+        "figmaLayer": "messages"
+      }
+    },
+    {
+      "path": "assets/gif/e294baa24b4cc4ae05d245f5ccda196e.gif",
+      "bytes": 20819524,
+      "sha256": "046c07bddf905ee5c92e42d65b69e1b3e0af9e92aacbc5372bedd3b26c4ea365",
+      "authority": {
+        "figmaFrameNode": "253:3011",
+        "figmaAssetNode": "253:3009",
+        "figmaLayer": "nsibidi"
+      }
+    },
     {
       "path": "assets/images/nkwo.png",
       "bytes": 51664,

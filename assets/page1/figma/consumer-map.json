@@ -29,7 +29,7 @@
     {
       "sourceRoot": "apps/pwa/src-app/assets/figma/mobile-profile-146-133",
       "assetRoot": "mobile-profile-146-133",
-      "files": ["avatar.png", "horoscope-taurus.png", "market-water.png", "moon-new.png"]
+      "files": ["avatar.jpg", "horoscope-taurus.png", "market-water.png", "moon-new.png"]
     },
     {
       "sourceRoot": "apps/pwa/src-app/assets/figma/mobile-reflection-102-560",
@@ -60,6 +60,21 @@
       "sourceRoot": "apps/admin/public/figma/users",
       "assetRoot": "admin/users",
       "files": ["chevron-admin.svg", "chevron-app.svg", "delete-alert.svg", "plus.svg", "search-admin.svg", "search-app.svg"]
+    },
+    {
+      "sourceRoot": "packages/design-system/src/page1/assets/figma/component-226188",
+      "assetRoot": "components/component-22",
+      "files": ["cardinal.svg"]
+    },
+    {
+      "sourceRoot": "packages/design-system/src/page1/assets/figma/gif-2533011",
+      "assetRoot": "components/gif",
+      "files": ["drumming-loop.webp", "drumming-reduced.png", "nsibidi-reduced.png"]
+    },
+    {
+      "sourceRoot": "apps/pwa/src-app/features/capsule/commercial/assets/figma",
+      "assetRoot": "commercial",
+      "files": ["upgrade-check.svg", "upgrade-sparkles.svg"]
     },
     {
       "sourceRoot": "apps/pwa/public",
@@ -96,6 +111,24 @@
   ],
   "exactExternalReuses": [
     {
+      "figmaFrameNode": "253:3011",
+      "figmaAssetNode": "253:3008",
+      "figmaLayer": "messages",
+      "assetRepositoryPath": "assets/gif/8a2f3abe77bdd81b4086ed2b1fd07fcf.gif",
+      "consumerImport": "@igbokal-assets/gif/8a2f3abe77bdd81b4086ed2b1fd07fcf.gif?url",
+      "bytes": 20098547,
+      "sha256": "06aef0c62a22f73a77fd6cc61edd58cf3f7c9ee2c768fc6cc71c5250c6b53805"
+    },
+    {
+      "figmaFrameNode": "253:3011",
+      "figmaAssetNode": "253:3009",
+      "figmaLayer": "nsibidi",
+      "assetRepositoryPath": "assets/gif/e294baa24b4cc4ae05d245f5ccda196e.gif",
+      "consumerImport": "@igbokal-assets/gif/e294baa24b4cc4ae05d245f5ccda196e.gif?url",
+      "bytes": 20819524,
+      "sha256": "046c07bddf905ee5c92e42d65b69e1b3e0af9e92aacbc5372bedd3b26c4ea365"
+    },
+    {
       "figmaFrameNode": "102:711",
       "figmaAssetNode": "114:78",
       "figmaLayer": "nkwo 1",
@@ -103,6 +136,49 @@
       "consumerImport": "@igbokal-assets/images/nkwo.png?url",
       "bytes": 51664,
       "sha256": "2df80fb57abde1194dc56adb74ad3a3fc496bf00f8026e10fc9ecca04962bd23"
+    }
+  ],
+  "optimizedDerivatives": [
+    {
+      "figmaFrameNode": "253:3011",
+      "figmaAssetNode": "253:3010",
+      "figmaLayer": "drumming",
+      "retiredSourceRepositoryPath": "assets/gif/14fd1b71d87b52cf9d40eed7891201d0.gif",
+      "sourceStatus": "retired-oversize-bytes-replaced-in-place",
+      "retiredReason": "40,922,378-byte source exceeded the repository-wide 25 MiB ceiling",
+      "sourceBytes": 40922378,
+      "sourceSha256": "c3e7e23b9a6b0c090e7a315c2dc40f84875a35d6abd7bb524d11e2ba9dddfaef",
+      "assetRepositoryPath": "assets/page1/figma/components/gif/drumming-loop.webp",
+      "consumerImport": "@igbokal-page1-assets/components/gif/drumming-loop.webp?url",
+      "bytes": 21280180,
+      "sha256": "e8cab63c747b2ccafa7d72e89c881909198a138a2dda01fbd0c6cb5c2bee00ae",
+      "mediaType": "image/webp",
+      "canvas": "874x874",
+      "frames": 144,
+      "durationMs": 6001,
+      "loopCount": 0,
+      "alpha": true,
+      "encoding": "animated WebP, quality 80, two-device-pixel source for the 436.966-square component"
+    }
+  ],
+  "compatibilityDerivatives": [
+    {
+      "figmaFrameNode": "253:3011",
+      "figmaAssetNode": "253:3010",
+      "figmaLayer": "drumming",
+      "retiredSourceBytes": 40922378,
+      "retiredSourceSha256": "c3e7e23b9a6b0c090e7a315c2dc40f84875a35d6abd7bb524d11e2ba9dddfaef",
+      "assetRepositoryPath": "assets/gif/14fd1b71d87b52cf9d40eed7891201d0.gif",
+      "consumerUrlPath": "assets/gif/14fd1b71d87b52cf9d40eed7891201d0.gif",
+      "bytes": 19710810,
+      "sha256": "85d0286cea6bf8aec7cc37b559eaac42aad5ea31901d09a8999350b2153408af",
+      "mediaType": "image/gif",
+      "canvas": "600x600",
+      "frames": 144,
+      "durationMs": 6000,
+      "loopCount": 0,
+      "alpha": true,
+      "encoding": "128-color animated GIF with Bayer dithering; legacy URL preserved"
     }
   ],
   "excludedSources": [

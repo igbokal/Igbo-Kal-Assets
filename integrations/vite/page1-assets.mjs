@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const integrationDirectory = dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = resolve(integrationDirectory, '..', '..');
+const MAX_ASSET_BYTES = 25 * 1024 * 1024;
 export const igbokalAssetsRoot = fileURLToPath(
   new URL('../../assets/', import.meta.url),
 );
@@ -39,12 +40,19 @@ export function assertLocalPage1AssetBridge() {
   const manifest = readJson('manifest.json');
   const consumerMap = readJson('consumer-map.json');
 
+  if (manifest.maxAssetBytes !== MAX_ASSET_BYTES) {
+    throw new Error('Page 1 asset-size policy has drifted.');
+  }
+
   for (const file of manifest.files) {
     const absolutePath = join(page1AssetsRoot, file.path);
     if (!existsSync(absolutePath)) {
       throw new Error(`Governed local asset is missing: ${file.path}`);
     }
     const contents = readFileSync(absolutePath);
+    if (contents.length > MAX_ASSET_BYTES) {
+      throw new Error(`Governed local asset exceeds 25 MiB: ${file.path}`);
+    }
     const sha256 = createHash('sha256').update(contents).digest('hex');
     if (contents.length !== file.bytes || sha256 !== file.sha256) {
       throw new Error(`Governed local asset failed integrity verification: ${file.path}`);
@@ -57,6 +65,9 @@ export function assertLocalPage1AssetBridge() {
       throw new Error(`Governed reused asset is missing or unsafe: ${file.path}`);
     }
     const contents = readFileSync(absolutePath);
+    if (contents.length > MAX_ASSET_BYTES) {
+      throw new Error(`Governed reused asset exceeds 25 MiB: ${file.path}`);
+    }
     const sha256 = createHash('sha256').update(contents).digest('hex');
     if (contents.length !== file.bytes || sha256 !== file.sha256) {
       throw new Error(`Governed reused asset failed integrity verification: ${file.path}`);
