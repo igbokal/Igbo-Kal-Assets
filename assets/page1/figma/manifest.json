@@ -1,0 +1,617 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "provider": "Figma",
+    "fileKey": "TTNkBhwPq88j9wRgrGOCAt",
+    "page": "Page 1",
+    "readiness": "READY_FOR_DEV"
+  },
+  "maxAssetBytes": 26214400,
+  "files": [
+    {
+      "path": "admin/capsules/chevron-back.svg",
+      "bytes": 255,
+      "sha256": "a603a057ee4767fb90785972ce4fb887b63994e79616b5c371c93208261c64d7"
+    },
+    {
+      "path": "admin/capsules/chevron-forward.svg",
+      "bytes": 258,
+      "sha256": "4bff6933148fd31d16d01761f7ee7ef87c7b820a1bad7882c5c3aef61bd6cbab"
+    },
+    {
+      "path": "admin/capsules/close.svg",
+      "bytes": 1626,
+      "sha256": "7fb79214ae838ee5e1339f78fe1569ae160743e3c48a185ac19eba4da3c2f2c7"
+    },
+    {
+      "path": "admin/capsules/history-rule.svg",
+      "bytes": 247,
+      "sha256": "a4d49b6d779f61caf1900fe5a68bf8c6fbf80b3a94edd4599adb696c6a9db4a8"
+    },
+    {
+      "path": "admin/capsules/horizontal-rule.svg",
+      "bytes": 255,
+      "sha256": "4926779af7b0e3f6d0f8a5ec5b46f972f80f3437dfa1b67c7480e2c1f2f48474"
+    },
+    {
+      "path": "admin/capsules/logo.svg",
+      "bytes": 8282,
+      "sha256": "0969684a3a8e0ca9f660d21d027e6b912ebe760354b6db00bc220c9e4886bdc8"
+    },
+    {
+      "path": "admin/capsules/vertical-rule.svg",
+      "bytes": 252,
+      "sha256": "2c800f44a6d0d3ef8065a8cf2cf00a2456cfc12b67af2a251640aebf27ab1ddd"
+    },
+    {
+      "path": "admin/dashboard/arrow-up-kapsules.svg",
+      "bytes": 339,
+      "sha256": "b9f207bc0a944110be419d9fbaf718cd60791aa2b7616ed0dc2071a7223a78b4"
+    },
+    {
+      "path": "admin/dashboard/arrow-up-users.svg",
+      "bytes": 314,
+      "sha256": "ca73e1dce3f23df030a9ab44bd29a3f2de175636b047ad778dae00717b58ae9b"
+    },
+    {
+      "path": "admin/dashboard/bell.svg",
+      "bytes": 1173,
+      "sha256": "5bc52d5195808605b454757578977aeceb4bfeaf56d4760ed158369d9f78f147"
+    },
+    {
+      "path": "admin/dashboard/book-open.png",
+      "bytes": 478,
+      "sha256": "94b090b02afc0d7c81726b47c85906f03aa9b08090d87b491a6e3fe99488110b"
+    },
+    {
+      "path": "admin/dashboard/check.svg",
+      "bytes": 317,
+      "sha256": "5a94895dc106b4f941ddf7d2f81bcbd58ae3ab8435368bfa55fae3664b3a5b3e"
+    },
+    {
+      "path": "admin/dashboard/dashboard.svg",
+      "bytes": 1288,
+      "sha256": "7c95d29a7c5b8ab87a37760e9342d2558b30028e7c9a2effe4f6bf64ed566f67"
+    },
+    {
+      "path": "admin/dashboard/logo.png",
+      "bytes": 8172,
+      "sha256": "8d2a31a3b779f2432436e707cf5b505eee49a7d49adeb1c2e70809657166a0dd"
+    },
+    {
+      "path": "admin/dashboard/published-dot.svg",
+      "bytes": 227,
+      "sha256": "8f999913d8f5720b02505b84e17ffddf84b205558fab3d2edd26aea8739db089"
+    },
+    {
+      "path": "admin/dashboard/scheduled-dot.svg",
+      "bytes": 246,
+      "sha256": "6bf47e114cceabbaa9e400743cc05a2d7728562c4162f0397730c63ccca41517"
+    },
+    {
+      "path": "admin/dashboard/search.svg",
+      "bytes": 481,
+      "sha256": "8986f69c41257e964538e36a920e823af4aed852c273b189853b2785e6e42358"
+    },
+    {
+      "path": "admin/glossary/bell.svg",
+      "bytes": 720,
+      "sha256": "52580ed7b4f95d2fa6c2a46a37f870bc82669201c537c1b20aed7e29b8b69393"
+    },
+    {
+      "path": "admin/glossary/book-open.svg",
+      "bytes": 1015,
+      "sha256": "bdc5e0447f1e589a31e82d593656bfb4333c88e0408c6f4174439af0acf67cc8"
+    },
+    {
+      "path": "admin/glossary/chevron-down.svg",
+      "bytes": 308,
+      "sha256": "ad03167f3768663bd58bd19a95eb7a080f63b766db380960f797a80dae4770e3"
+    },
+    {
+      "path": "admin/glossary/close.svg",
+      "bytes": 1618,
+      "sha256": "4a9b2af2c842038222335127ddf795b5f0ecbc3b765dd6f7e971ef05b099c96d"
+    },
+    {
+      "path": "admin/glossary/dashboard.svg",
+      "bytes": 1127,
+      "sha256": "2ca11e732ccf2d426f18a08027530ac6ed4157c9b08fa4507b594970f1fb1b7d"
+    },
+    {
+      "path": "admin/glossary/edit.svg",
+      "bytes": 956,
+      "sha256": "7d2b29c0aa45ce2517b7b4fef780bf380527ef2cf90446328a83a975e72c993b"
+    },
+    {
+      "path": "admin/glossary/logo.png",
+      "bytes": 8172,
+      "sha256": "8d2a31a3b779f2432436e707cf5b505eee49a7d49adeb1c2e70809657166a0dd"
+    },
+    {
+      "path": "admin/glossary/plus.svg",
+      "bytes": 306,
+      "sha256": "7ee77d6bf954ff3917ac2a0ab9023cb9dba08a87c75473c78fd641867ebe0545"
+    },
+    {
+      "path": "admin/glossary/search.svg",
+      "bytes": 454,
+      "sha256": "00da071bd939e254bdb42043e7befcbda04ddb4a703c8efdcc646ad94c60a883"
+    },
+    {
+      "path": "admin/glossary/trash.svg",
+      "bytes": 928,
+      "sha256": "4d5e142b028d4b15207636236ec73847d9a12bad9525f1eaa7d3fa133e5bf71d"
+    },
+    {
+      "path": "admin/users/chevron-admin.svg",
+      "bytes": 310,
+      "sha256": "fb901e731ff88c1abc379c8bcec24787972025b905e99058a048d3826e8b590a"
+    },
+    {
+      "path": "admin/users/chevron-app.svg",
+      "bytes": 310,
+      "sha256": "fb901e731ff88c1abc379c8bcec24787972025b905e99058a048d3826e8b590a"
+    },
+    {
+      "path": "admin/users/delete-alert.svg",
+      "bytes": 945,
+      "sha256": "4daec20eefa82c5a3369b1cedae08cfd7eb78e7c5cc723d8fc93397fb645398b"
+    },
+    {
+      "path": "admin/users/plus.svg",
+      "bytes": 308,
+      "sha256": "aef1b418552bf564dd1c9152ba512378a7454e1c0d47483205b46a7a61827629"
+    },
+    {
+      "path": "admin/users/search-admin.svg",
+      "bytes": 470,
+      "sha256": "eccde730b81a2c75192061de303d04b1c3db47518aaa8a0167a8b83766b343b9"
+    },
+    {
+      "path": "admin/users/search-app.svg",
+      "bytes": 475,
+      "sha256": "5c969671f15fedcf6f6d3aad695c72a580972b8f81b2a9f143091bbf5ad1c02a"
+    },
+    {
+      "path": "baselines/102-16.png",
+      "bytes": 73875,
+      "sha256": "2d2752389d5933e9eeba1c4f47703a36a02cfd3f4e017e6f1f6eda336450530c"
+    },
+    {
+      "path": "baselines/102-560.png",
+      "bytes": 39945,
+      "sha256": "d082c2772a271fd8e8ad146a161d4a303f0270b59c127dd21d176289d24e061a"
+    },
+    {
+      "path": "baselines/102-81.png",
+      "bytes": 119946,
+      "sha256": "096aeeb5c4b76a9117923126acefae5bf53723f62cf411d128e72536bd028f4d"
+    },
+    {
+      "path": "baselines/157-126.png",
+      "bytes": 23123,
+      "sha256": "fd061e34afb6179cd97bcbc72e57fc55779809dccddd10720b68196d49b5af7a"
+    },
+    {
+      "path": "baselines/223-173.png",
+      "bytes": 241659,
+      "sha256": "7c84d0739826b9fd38402a0acd0322c85ad5f4a24a3f42c4fa1d06f921bf96f1"
+    },
+    {
+      "path": "baselines/226-898.png",
+      "bytes": 73002,
+      "sha256": "555bd2550a93de13d3501adb810a17b0379b4e44d5c3d0334235b141bfc124bd"
+    },
+    {
+      "path": "commercial/upgrade-check.svg",
+      "bytes": 317,
+      "sha256": "8c1d138d02333299a086fbfb42169058e11b5d8cae5366bdda4b87d34a726fdd"
+    },
+    {
+      "path": "commercial/upgrade-sparkles.svg",
+      "bytes": 1807,
+      "sha256": "d990df593d02a39f1e59dca225c0d11099b91085d02d31e351e3596dfc66faf3"
+    },
+    {
+      "path": "components/component-22/cardinal.svg",
+      "bytes": 4142,
+      "sha256": "61c2ba7e87dc77afb303214391cbe2911931f3b489af28584f0f1effe8a829e3"
+    },
+    {
+      "path": "components/gif/drumming-loop.webp",
+      "bytes": 21280180,
+      "sha256": "e8cab63c747b2ccafa7d72e89c881909198a138a2dda01fbd0c6cb5c2bee00ae"
+    },
+    {
+      "path": "components/gif/drumming-reduced.png",
+      "bytes": 2135180,
+      "sha256": "9e0e2b63db1dcf4054487aeb0503c5fb31964498e41bbda299342b86b1401f5f"
+    },
+    {
+      "path": "components/gif/nsibidi-reduced.png",
+      "bytes": 1486919,
+      "sha256": "68111b46fc40c28214288c0c4b73d522810fd07571121a2c9e84ca4ff1139495"
+    },
+    {
+      "path": "desktop-36-18/logo-mark.png",
+      "bytes": 8172,
+      "sha256": "8d2a31a3b779f2432436e707cf5b505eee49a7d49adeb1c2e70809657166a0dd"
+    },
+    {
+      "path": "desktop-36-18/messages-reduced.png",
+      "bytes": 1270194,
+      "sha256": "59973a1de9f10a966ec886cf695c9c4375ab8409f8983bdff4d587992295f217"
+    },
+    {
+      "path": "desktop-36-18/messages.gif",
+      "bytes": 20098547,
+      "sha256": "06aef0c62a22f73a77fd6cc61edd58cf3f7c9ee2c768fc6cc71c5250c6b53805"
+    },
+    {
+      "path": "desktop-36-18/month-wheel-orbit.png",
+      "bytes": 32967,
+      "sha256": "c63281108168186cb50d6af691b2b225f15c7a58985313992d9a0e8caa31ebea"
+    },
+    {
+      "path": "desktop-36-18/profile-symbol.svg",
+      "bytes": 2883,
+      "sha256": "14c637462fdc27fbf65a976c438fc7be679f22b890ed6883ef07a36fba21a662"
+    },
+    {
+      "path": "desktop-36-18/threshold-guy.svg",
+      "bytes": 11000,
+      "sha256": "1e796e212524fb6273f07c6ed98dee5d8af236ec8f6250ee0f01823b01c43f4f"
+    },
+    {
+      "path": "identity/igbokal-app-icon-192.png",
+      "bytes": 8172,
+      "sha256": "8d2a31a3b779f2432436e707cf5b505eee49a7d49adeb1c2e70809657166a0dd"
+    },
+    {
+      "path": "identity/igbokal-app-icon-512.png",
+      "bytes": 18269,
+      "sha256": "cc687efd58909b5b3f6be20bfece6d8334717c4a5a4c99b44a793dc11c5dd853"
+    },
+    {
+      "path": "mobile-calendar-102-81/chakra-crown.svg",
+      "bytes": 1421,
+      "sha256": "5d9fbf1a2e7e709277b0f025075d89c69e98a444ada2e8c93ca85c1603c1000d"
+    },
+    {
+      "path": "mobile-calendar-102-81/chakra-heart.svg",
+      "bytes": 1118,
+      "sha256": "a3f66bead4ad51ca3ab57d0652d4e3f5047eb07af108047bb5caa9dadfda1fd7"
+    },
+    {
+      "path": "mobile-calendar-102-81/chakra-root.svg",
+      "bytes": 2363,
+      "sha256": "c8d2284f43d44a57ba79d25211094cd57c1906aa4b34a54c5cb875e00260141e"
+    },
+    {
+      "path": "mobile-calendar-102-81/chakra-sacral.svg",
+      "bytes": 3284,
+      "sha256": "6953a1739fc8f7dcc27ea5847380438bcdf22fb3adb03b8100f113ba7a91e1f0"
+    },
+    {
+      "path": "mobile-calendar-102-81/chakra-solar-plexus.svg",
+      "bytes": 1168,
+      "sha256": "2a7215afcae693bb8cadf779c24a419ca9e588708dbeab489aa93bccca25c906"
+    },
+    {
+      "path": "mobile-calendar-102-81/chakra-third-eye.svg",
+      "bytes": 1876,
+      "sha256": "c8f1450c18a79694c4e107c39f819ba99f8712b417cb5ff27e7c8f9b3152b966"
+    },
+    {
+      "path": "mobile-calendar-102-81/chakra-throat.svg",
+      "bytes": 925,
+      "sha256": "345ba406540937274c8aa6842561c40c4af3976731267baf93a10d1d73a765dd"
+    },
+    {
+      "path": "mobile-calendar-102-81/direction-east.svg",
+      "bytes": 909,
+      "sha256": "1e8ab8f75ccae433db68296c73cf7cca50fe8a2f433e467c933389655951a61e"
+    },
+    {
+      "path": "mobile-calendar-102-81/direction-north.svg",
+      "bytes": 908,
+      "sha256": "ec22541c2b9461f88a5bda1807e20ea2b854fc3df8cb9df1cf9223fa05e7bcb7"
+    },
+    {
+      "path": "mobile-calendar-102-81/direction-south.svg",
+      "bytes": 1022,
+      "sha256": "960b4c64191362d0d13d8165967e9d095188b92da6db7fbf592787f7f1ec2c50"
+    },
+    {
+      "path": "mobile-calendar-102-81/direction-west.svg",
+      "bytes": 1014,
+      "sha256": "8d7d779b7c1da7b7f66987fca9bdaeba2dbe8cd58af225539d23406f3e340ac2"
+    },
+    {
+      "path": "mobile-calendar-102-81/endcap-afo.svg",
+      "bytes": 11031,
+      "sha256": "d1308cfd3144bd921c0bc88214e2315bcd15085018cc432b2cd57a42e93a305b"
+    },
+    {
+      "path": "mobile-calendar-102-81/endcap-orie.svg",
+      "bytes": 4144,
+      "sha256": "5f6d87ee03732606ef43160d4c6374c58d271cf4bdb8976b51962d2a2897c468"
+    },
+    {
+      "path": "mobile-calendar-102-81/header-menu.svg",
+      "bytes": 330,
+      "sha256": "84a36d5c774a1f77e32bbecfa8bec30c1eac4b24da5f5ee815609bdaed5a064a"
+    },
+    {
+      "path": "mobile-calendar-102-81/header-profile.svg",
+      "bytes": 2883,
+      "sha256": "14c637462fdc27fbf65a976c438fc7be679f22b890ed6883ef07a36fba21a662"
+    },
+    {
+      "path": "mobile-calendar-102-81/season-autumn.svg",
+      "bytes": 1119,
+      "sha256": "060decc247e93cf163b3ceed484a28434ac2bba08967555abd0a1124558d1036"
+    },
+    {
+      "path": "mobile-calendar-102-81/season-spring.svg",
+      "bytes": 1099,
+      "sha256": "a745bc8d612fe32199f1ece89af53c9955b1e6fbcf308f4dba64cc3841c8dd8c"
+    },
+    {
+      "path": "mobile-calendar-102-81/season-summer.svg",
+      "bytes": 810,
+      "sha256": "a9555d40870f2c5bba81887e2a47407119d0a8047e26fbde45ad2f2f71dbf692"
+    },
+    {
+      "path": "mobile-calendar-102-81/season-winter.svg",
+      "bytes": 3228,
+      "sha256": "d1525cd8b638a6c5df400d7aaecac842da372951cfad1a70924b0d66765b7262"
+    },
+    {
+      "path": "mobile-calendar-102-81/tail-afo.svg",
+      "bytes": 444,
+      "sha256": "7942fe833ec7d303be58f40d6062bcad6701fb89c7d16366596543cff7fe76ca"
+    },
+    {
+      "path": "mobile-calendar-102-81/tail-eke.svg",
+      "bytes": 444,
+      "sha256": "8adc82d7b81e7982183e206570266e8d4e34922d15ab6b9b13f68094f9124680"
+    },
+    {
+      "path": "mobile-calendar-102-81/tail-nkwo.svg",
+      "bytes": 444,
+      "sha256": "50155493f139cce1a52a5b7bfa1d1420747bb64101a3f416f06c0487262b65dc"
+    },
+    {
+      "path": "mobile-calendar-102-81/tail-orie.svg",
+      "bytes": 444,
+      "sha256": "2826c4372343c0e7135e4d678b815330cc3de51d3b8386950c60ffbbf5500f91"
+    },
+    {
+      "path": "mobile-kalendar-navigation-226-898/threshold-guy.svg",
+      "bytes": 11040,
+      "sha256": "e8c2f1e2f9ee2f33400053ec4553ab11eb8c6acb2a310cf68701a4774acf79c3"
+    },
+    {
+      "path": "mobile-kalendar-navigation-226-898/year-orbit.png",
+      "bytes": 12460,
+      "sha256": "1c5ba1a729206a5279a7d5c791ae0692f9214fb3f74562deb0186678b3eebeae"
+    },
+    {
+      "path": "mobile-notes-129-122/add.svg",
+      "bytes": 326,
+      "sha256": "7451bcc8f94d604b1ad0c6b5bf6bde578ffcbc4881142edab63f797d664c92f6"
+    },
+    {
+      "path": "mobile-notes-129-122/search.svg",
+      "bytes": 1113,
+      "sha256": "4bed469188b12028c32878f349036d070d252197e92dd91e2a23a0500ec7c306"
+    },
+    {
+      "path": "mobile-profile-146-133/avatar.jpg",
+      "bytes": 46954,
+      "sha256": "6a3c8cb7a00dfad6bf0d27b161b265187f5091d796ad66e0840a7c04fc93de30"
+    },
+    {
+      "path": "mobile-profile-146-133/horoscope-taurus.png",
+      "bytes": 482591,
+      "sha256": "a74aace19e1ab5721941a019ff21d9a7a2ec1d9f078339510fe703767c791694"
+    },
+    {
+      "path": "mobile-profile-146-133/market-water.png",
+      "bytes": 48578,
+      "sha256": "8b3620b30782a325a508aa4aa80ade455acb3459c6949ca69e5da799bcccb4a0"
+    },
+    {
+      "path": "mobile-profile-146-133/moon-new.png",
+      "bytes": 102065,
+      "sha256": "33d501c24849d3de2c8776e098e8e38a1fdfb3ecd51656fd7e4a7d6e36c50b95"
+    },
+    {
+      "path": "mobile-reflection-102-560/close.svg",
+      "bytes": 1626,
+      "sha256": "7fb79214ae838ee5e1339f78fe1569ae160743e3c48a185ac19eba4da3c2f2c7"
+    },
+    {
+      "path": "mobile-reflection-102-560/empty-sparkles.svg",
+      "bytes": 1787,
+      "sha256": "387c60a321e14f539666b007ebd88ddb6efade012813c60ac4f5ab8371c830c5"
+    },
+    {
+      "path": "mobile-reflection-102-560/izu-afo.svg",
+      "bytes": 8282,
+      "sha256": "09691357818f02e7ba82427517b26e32953aedefa716270ea8a09577cefaca8e"
+    },
+    {
+      "path": "mobile-reflection-102-560/izu-eke.svg",
+      "bytes": 8282,
+      "sha256": "9c63d5a0b95140befb34564f29621cc627ab2f1dbca43e0cb4cff800b5bb2782"
+    },
+    {
+      "path": "mobile-reflection-102-560/izu-nkwo.svg",
+      "bytes": 8282,
+      "sha256": "7b7a7a2dd36576a56953999348a0889e1416bec36085d80f0e560987a2dd3cc3"
+    },
+    {
+      "path": "mobile-reflection-102-560/izu-orie.svg",
+      "bytes": 8280,
+      "sha256": "cdc8cd27b138e9fd4545f22537efa12862c11d4d10e7c99eea8a3c15454df794"
+    },
+    {
+      "path": "mobile-reflection-102-560/splash-bottom.svg",
+      "bytes": 10171,
+      "sha256": "1b0143629b1f213f6b42d983656267d67ebe85749acd73e531829dc4171c599d"
+    },
+    {
+      "path": "mobile-reflection-102-560/splash-top.svg",
+      "bytes": 10171,
+      "sha256": "66225983f0d4a5b86d7d4211c7f4edcc84977eedd612a948660e9e683cb56427"
+    },
+    {
+      "path": "mobile-today-336-995/moon.png",
+      "bytes": 102065,
+      "sha256": "33d501c24849d3de2c8776e098e8e38a1fdfb3ecd51656fd7e4a7d6e36c50b95"
+    },
+    {
+      "path": "mobile-today-336-995/nav-discover.svg",
+      "bytes": 696,
+      "sha256": "46a54e44fe1accbd39755771cc1a8789ee537ef52de950fcb18f39ef711573a1"
+    },
+    {
+      "path": "mobile-today-336-995/nav-home.svg",
+      "bytes": 467,
+      "sha256": "ff98fd36bb21f0b6d5cdbca8decda2710060b03d8d3805605c72b2c09ef8f0a8"
+    },
+    {
+      "path": "mobile-today-336-995/nav-notes.svg",
+      "bytes": 997,
+      "sha256": "52d80cba7428fb26fa05463bbfccb1a0dbc57b237f2d31f4714e0533b87b31bf"
+    },
+    {
+      "path": "mobile-today-336-995/nav-profile.svg",
+      "bytes": 1883,
+      "sha256": "3b6f3f0b5a6eaf43e928dc2097a75dcd6ca049b747f8d42081fde231c238c1c5"
+    },
+    {
+      "path": "mobile-today-336-995/threshold-guy.svg",
+      "bytes": 11007,
+      "sha256": "f89718e6a93c83db25a06189f09ee79b10096ff5efeb60622c07d8507a041635"
+    }
+  ],
+  "reusedFiles": [
+    {
+      "path": "assets/gif/14fd1b71d87b52cf9d40eed7891201d0.gif",
+      "bytes": 19710810,
+      "sha256": "85d0286cea6bf8aec7cc37b559eaac42aad5ea31901d09a8999350b2153408af",
+      "authority": {
+        "figmaFrameNode": "253:3011",
+        "figmaAssetNode": "253:3010",
+        "figmaLayer": "drumming",
+        "derivativeOfRetiredSha256": "c3e7e23b9a6b0c090e7a315c2dc40f84875a35d6abd7bb524d11e2ba9dddfaef"
+      }
+    },
+    {
+      "path": "assets/gif/8a2f3abe77bdd81b4086ed2b1fd07fcf.gif",
+      "bytes": 20098547,
+      "sha256": "06aef0c62a22f73a77fd6cc61edd58cf3f7c9ee2c768fc6cc71c5250c6b53805",
+      "authority": {
+        "figmaFrameNode": "253:3011",
+        "figmaAssetNode": "253:3008",
+        "figmaLayer": "messages"
+      }
+    },
+    {
+      "path": "assets/gif/e294baa24b4cc4ae05d245f5ccda196e.gif",
+      "bytes": 20819524,
+      "sha256": "046c07bddf905ee5c92e42d65b69e1b3e0af9e92aacbc5372bedd3b26c4ea365",
+      "authority": {
+        "figmaFrameNode": "253:3011",
+        "figmaAssetNode": "253:3009",
+        "figmaLayer": "nsibidi"
+      }
+    },
+    {
+      "path": "assets/images/nkwo.png",
+      "bytes": 51664,
+      "sha256": "2df80fb57abde1194dc56adb74ad3a3fc496bf00f8026e10fc9ecca04962bd23",
+      "authority": {
+        "figmaFrameNode": "102:711",
+        "figmaAssetNode": "114:78",
+        "figmaLayer": "nkwo 1"
+      }
+    },
+    {
+      "path": "assets/page1/moon-phases/moon-first-quarter.png",
+      "bytes": 11244,
+      "sha256": "7366ac926de32eeeac6695ee65fee162018af8df506a8539dc7288e4697e7916",
+      "authority": {
+        "figmaComponentNode": "188:143",
+        "governedCollectionManifest": "assets/page1/moon-phases/manifest.json"
+      }
+    },
+    {
+      "path": "assets/page1/moon-phases/moon-full.png",
+      "bytes": 27697,
+      "sha256": "4e8a34bb0b1465270d07c45eb95a661f3c28ed95d994a55748dbe805ae6c1c8e",
+      "authority": {
+        "figmaComponentNode": "188:143",
+        "governedCollectionManifest": "assets/page1/moon-phases/manifest.json"
+      }
+    },
+    {
+      "path": "assets/page1/moon-phases/moon-last-quarter.png",
+      "bytes": 19659,
+      "sha256": "7cad8ce186498ba113017ddfde1d4e4eafdc89dfc223e34813e8781446d9f29c",
+      "authority": {
+        "figmaComponentNode": "188:143",
+        "governedCollectionManifest": "assets/page1/moon-phases/manifest.json"
+      }
+    },
+    {
+      "path": "assets/page1/moon-phases/moon-new.png",
+      "bytes": 5536,
+      "sha256": "5c2b32edf1eb9604e7671cfb3aa282039e46258b006b363ad51206f6cb02a542",
+      "authority": {
+        "figmaComponentNode": "188:143",
+        "governedCollectionManifest": "assets/page1/moon-phases/manifest.json"
+      }
+    },
+    {
+      "path": "assets/page1/moon-phases/moon-waning-crescent.png",
+      "bytes": 5798,
+      "sha256": "2555a3a899ad7985dd948751c5008530d502642e414bfeb81efed6e03ad4c360",
+      "authority": {
+        "figmaComponentNode": "188:143",
+        "governedCollectionManifest": "assets/page1/moon-phases/manifest.json"
+      }
+    },
+    {
+      "path": "assets/page1/moon-phases/moon-waning-gibbous.png",
+      "bytes": 24504,
+      "sha256": "b0cf9eecf7116ba740e853852a7dc8e46f3984bbe4e375dd9208b6bb4ffff925",
+      "authority": {
+        "figmaComponentNode": "188:143",
+        "governedCollectionManifest": "assets/page1/moon-phases/manifest.json"
+      }
+    },
+    {
+      "path": "assets/page1/moon-phases/moon-waxing-crescent.png",
+      "bytes": 7666,
+      "sha256": "a22b2434af914b4614a662cf41c3593eec127d64c5d5ef622777e301d0ca22d5",
+      "authority": {
+        "figmaComponentNode": "188:143",
+        "governedCollectionManifest": "assets/page1/moon-phases/manifest.json"
+      }
+    },
+    {
+      "path": "assets/page1/moon-phases/moon-waxing-gibbous.png",
+      "bytes": 27355,
+      "sha256": "e0ec8be9905cf945010c5ce574279dfc9d442f21eb1a3ccce7dab27c909d05fe",
+      "authority": {
+        "figmaComponentNode": "188:143",
+        "governedCollectionManifest": "assets/page1/moon-phases/manifest.json"
+      }
+    }
+  ]
+}
