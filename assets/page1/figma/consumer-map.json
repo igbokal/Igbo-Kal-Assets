@@ -83,8 +83,30 @@
         {"source": "logo192.png", "asset": "igbokal-app-icon-192.png"},
         {"source": "logo512.png", "asset": "igbokal-app-icon-512.png"}
       ]
+    },
+    {
+      "sourceRoot": "figma:TTNkBhwPq88j9wRgrGOCAt/page1-native-baselines",
+      "assetRoot": "baselines",
+      "files": ["102-16.png", "102-81.png", "102-560.png", "157-126.png", "223-173.png", "226-898.png"]
     }
   ],
+  "nativeBaselines": {
+    "authority": "Owner ruling 2026-08-23 #5: native PNG baselines approved, exact to Figma, max-depth (full-file) pull mandatory",
+    "fileKey": "TTNkBhwPq88j9wRgrGOCAt",
+    "fileVersion": "2388014748743450779",
+    "capturedAt": "2026-08-24T05:12:08.406Z",
+    "captureMethod": "Canonical untruncated full-file pull (files/<KEY>) confirmed every target on Page 1; local sizes from files/<KEY>/nodes?ids=...&geometry=paths (never absoluteBoundingBox); native-width renders from images/<KEY>?format=png&scale=1; PNG IHDR dimensions verified equal to local size before write",
+    "captureScript": "scripts/fleet/capture-page1-native-baselines.mjs",
+    "purpose": "Native-width Figma pixel baselines for the six implemented-local-not-accepted Page-1 mobile nodes (standing evidence blocker in docs/overhaul/c2-51-node-ledger.md). Pixel fidelity evidence, not acceptance.",
+    "files": [
+      {"node": "102:16", "frameName": "igbokal-mobile", "path": "baselines/102-16.png", "width": 402, "height": 908, "bytes": 73875, "sha256": "2d2752389d5933e9eeba1c4f47703a36a02cfd3f4e017e6f1f6eda336450530c", "crossCheck": "byte-identical to the 2026-08-22 native specimen recorded in docs/overhaul/FIGMA-FIDELITY-BASELINES.md"},
+      {"node": "102:81", "frameName": "igbokal-mobile cal", "path": "baselines/102-81.png", "width": 402, "height": 1138, "bytes": 119946, "sha256": "096aeeb5c4b76a9117923126acefae5bf53723f62cf411d128e72536bd028f4d", "crossCheck": "first governed capture; no prior baseline existed"},
+      {"node": "102:560", "frameName": "Reflection-modal", "path": "baselines/102-560.png", "width": 402, "height": 616, "bytes": 39945, "sha256": "d082c2772a271fd8e8ad146a161d4a303f0270b59c127dd21d176289d24e061a", "crossCheck": "first governed capture; no prior baseline existed"},
+      {"node": "226:898", "frameName": "Month-modal", "path": "baselines/226-898.png", "width": 402, "height": 662, "bytes": 73002, "sha256": "555bd2550a93de13d3501adb810a17b0379b4e44d5c3d0334235b141bfc124bd", "crossCheck": "first governed capture; no prior baseline existed"},
+      {"node": "157:126", "frameName": "login-screen", "path": "baselines/157-126.png", "width": 402, "height": 874, "bytes": 23123, "sha256": "fd061e34afb6179cd97bcbc72e57fc55779809dccddd10720b68196d49b5af7a", "crossCheck": "byte-identical to the 2026-08-23 native specimen recorded in docs/overhaul/FIGMA-FIDELITY-BASELINES.md"},
+      {"node": "223:173", "frameName": "glossary-page", "path": "baselines/223-173.png", "width": 402, "height": 2983, "bytes": 241659, "sha256": "7c84d0739826b9fd38402a0acd0322c85ad5f4a24a3f42c4fa1d06f921bf96f1", "crossCheck": "byte-identical to the R2 public-glossary candidate export recorded in docs/overhaul/FIGMA-FIDELITY-BASELINES.md"}
+    ]
+  },
   "sourceReuses": [
     {
       "source": "apps/pwa/src-app/assets/figma/mobile-day-detail-159-340/close.svg",

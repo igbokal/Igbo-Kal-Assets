@@ -174,6 +174,36 @@
       "sha256": "5c969671f15fedcf6f6d3aad695c72a580972b8f81b2a9f143091bbf5ad1c02a"
     },
     {
+      "path": "baselines/102-16.png",
+      "bytes": 73875,
+      "sha256": "2d2752389d5933e9eeba1c4f47703a36a02cfd3f4e017e6f1f6eda336450530c"
+    },
+    {
+      "path": "baselines/102-560.png",
+      "bytes": 39945,
+      "sha256": "d082c2772a271fd8e8ad146a161d4a303f0270b59c127dd21d176289d24e061a"
+    },
+    {
+      "path": "baselines/102-81.png",
+      "bytes": 119946,
+      "sha256": "096aeeb5c4b76a9117923126acefae5bf53723f62cf411d128e72536bd028f4d"
+    },
+    {
+      "path": "baselines/157-126.png",
+      "bytes": 23123,
+      "sha256": "fd061e34afb6179cd97bcbc72e57fc55779809dccddd10720b68196d49b5af7a"
+    },
+    {
+      "path": "baselines/223-173.png",
+      "bytes": 241659,
+      "sha256": "7c84d0739826b9fd38402a0acd0322c85ad5f4a24a3f42c4fa1d06f921bf96f1"
+    },
+    {
+      "path": "baselines/226-898.png",
+      "bytes": 73002,
+      "sha256": "555bd2550a93de13d3501adb810a17b0379b4e44d5c3d0334235b141bfc124bd"
+    },
+    {
       "path": "commercial/upgrade-check.svg",
       "bytes": 317,
       "sha256": "8c1d138d02333299a086fbfb42169058e11b5d8cae5366bdda4b87d34a726fdd"

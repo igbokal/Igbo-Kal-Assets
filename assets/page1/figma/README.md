@@ -24,6 +24,10 @@ The directory layout deliberately retains the Figma implementation slice:
 - `admin/glossary/`
 - `admin/users/`
 - `identity/`
+- `baselines/` — native-width PNG renders of the six implemented-local
+  Page-1 mobile nodes (`102:16`, `102:81`, `102:560`, `226:898`, `157:126`,
+  `223:173`), captured exact to Figma per the 2026-08-23 owner ruling;
+  provenance in `baselines/PROVENANCE.md`. Fidelity evidence, not acceptance.
 
 `identity/` contains the required 192px and 512px variants of the IgboKal app
 identity. Install-manifest icons and favicons may remain local to the PWA as the
