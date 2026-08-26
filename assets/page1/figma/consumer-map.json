@@ -122,6 +122,16 @@
   },
   "sourceReuses": [
     {
+      "source": "figma:TTNkBhwPq88j9wRgrGOCAt/page1/260-3140",
+      "figmaFrameNode": "260:3116",
+      "figmaAssetNode": "260:3140",
+      "reuseReason": "Official Figma MCP export is byte-identical to the existing governed close glyph; do not duplicate the asset.",
+      "assetRepositoryPath": "assets/page1/figma/mobile-reflection-102-560/close.svg",
+      "consumerImport": "@igbokal-page1-assets/mobile-reflection-102-560/close.svg?url",
+      "bytes": 1626,
+      "sha256": "7fb79214ae838ee5e1339f78fe1569ae160743e3c48a185ac19eba4da3c2f2c7"
+    },
+    {
       "source": "apps/pwa/src-app/assets/figma/mobile-day-detail-159-340/close.svg",
       "assetRepositoryPath": "assets/page1/figma/mobile-reflection-102-560/close.svg",
       "consumerImport": "@igbokal-page1-assets/mobile-reflection-102-560/close.svg?url",
