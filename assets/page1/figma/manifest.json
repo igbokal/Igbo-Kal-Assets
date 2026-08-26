@@ -204,6 +204,26 @@
       "sha256": "555bd2550a93de13d3501adb810a17b0379b4e44d5c3d0334235b141bfc124bd"
     },
     {
+      "path": "baselines/260-3116.png",
+      "bytes": 29823,
+      "sha256": "199df6c098161eaaaa60b69be33c187c9386c3debfafb5a0299e3db3e02a1cbd"
+    },
+    {
+      "path": "baselines/36-18.png",
+      "bytes": 356485,
+      "sha256": "0d2b17116b2fd9b04bdcbef5f0ce1843040c781cf201ce1a680b46b444578dfb"
+    },
+    {
+      "path": "baselines/38-4469.png",
+      "bytes": 171677,
+      "sha256": "035e96df929488ce6823dbb7a3ba715d29129584add171c8a7c52d2bb6121616"
+    },
+    {
+      "path": "baselines/39-539.png",
+      "bytes": 90276,
+      "sha256": "de8ff1114b0d0e843198fa9045b2583a785343ec11fd141654daa7f0a0c013df"
+    },
+    {
       "path": "commercial/upgrade-check.svg",
       "bytes": 317,
       "sha256": "8c1d138d02333299a086fbfb42169058e11b5d8cae5366bdda4b87d34a726fdd"

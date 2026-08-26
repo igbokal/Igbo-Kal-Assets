@@ -87,7 +87,7 @@
     {
       "sourceRoot": "figma:TTNkBhwPq88j9wRgrGOCAt/page1-native-baselines",
       "assetRoot": "baselines",
-      "files": ["102-16.png", "102-81.png", "102-560.png", "157-126.png", "223-173.png", "226-898.png"]
+      "files": ["102-16.png", "102-81.png", "102-560.png", "157-126.png", "223-173.png", "226-898.png", "260-3116.png", "36-18.png", "38-4469.png", "39-539.png"]
     }
   ],
   "nativeBaselines": {
@@ -95,16 +95,24 @@
     "fileKey": "TTNkBhwPq88j9wRgrGOCAt",
     "fileVersion": "2388014748743450779",
     "capturedAt": "2026-08-24T05:12:08.406Z",
-    "captureMethod": "Canonical untruncated full-file pull (files/<KEY>) confirmed every target on Page 1; local sizes from files/<KEY>/nodes?ids=...&geometry=paths (never absoluteBoundingBox); native-width renders from images/<KEY>?format=png&scale=1; PNG IHDR dimensions verified equal to local size before write",
+    "captureMethod": "Each batch used a canonical untruncated full-file pull (files/<KEY>) to confirm every target on Page 1; local sizes came from files/<KEY>/nodes?ids=...&geometry=paths (never absoluteBoundingBox); native-width renders came from images/<KEY>?format=png&scale=1; PNG IHDR dimensions were verified against the integer local size or the whole-pixel ceiling of a fractional frame extent before write",
     "captureScript": "scripts/fleet/capture-page1-native-baselines.mjs",
-    "purpose": "Native-width Figma pixel baselines for the six implemented-local-not-accepted Page-1 mobile nodes (standing evidence blocker in docs/overhaul/c2-51-node-ledger.md). Pixel fidelity evidence, not acceptance.",
+    "purpose": "Native-width Figma pixel baselines for implemented Page-1 mobile and desktop nodes. Pixel fidelity evidence, not acceptance.",
+    "captureBatches": [
+      {"fileVersion": "2388014748743450779", "capturedAt": "2026-08-24T05:12:08.406Z", "nodes": ["102:16", "102:81", "102:560", "226:898", "157:126", "223:173"]},
+      {"fileVersion": "2391359459346996176", "capturedAt": "2026-08-26T00:05:06.572Z", "nodes": ["36:18", "38:4469", "39:539", "260:3116"]}
+    ],
     "files": [
       {"node": "102:16", "frameName": "igbokal-mobile", "path": "baselines/102-16.png", "width": 402, "height": 908, "bytes": 73875, "sha256": "2d2752389d5933e9eeba1c4f47703a36a02cfd3f4e017e6f1f6eda336450530c", "crossCheck": "byte-identical to the 2026-08-22 native specimen recorded in docs/overhaul/FIGMA-FIDELITY-BASELINES.md"},
       {"node": "102:81", "frameName": "igbokal-mobile cal", "path": "baselines/102-81.png", "width": 402, "height": 1138, "bytes": 119946, "sha256": "096aeeb5c4b76a9117923126acefae5bf53723f62cf411d128e72536bd028f4d", "crossCheck": "first governed capture; no prior baseline existed"},
       {"node": "102:560", "frameName": "Reflection-modal", "path": "baselines/102-560.png", "width": 402, "height": 616, "bytes": 39945, "sha256": "d082c2772a271fd8e8ad146a161d4a303f0270b59c127dd21d176289d24e061a", "crossCheck": "first governed capture; no prior baseline existed"},
       {"node": "226:898", "frameName": "Month-modal", "path": "baselines/226-898.png", "width": 402, "height": 662, "bytes": 73002, "sha256": "555bd2550a93de13d3501adb810a17b0379b4e44d5c3d0334235b141bfc124bd", "crossCheck": "first governed capture; no prior baseline existed"},
       {"node": "157:126", "frameName": "login-screen", "path": "baselines/157-126.png", "width": 402, "height": 874, "bytes": 23123, "sha256": "fd061e34afb6179cd97bcbc72e57fc55779809dccddd10720b68196d49b5af7a", "crossCheck": "byte-identical to the 2026-08-23 native specimen recorded in docs/overhaul/FIGMA-FIDELITY-BASELINES.md"},
-      {"node": "223:173", "frameName": "glossary-page", "path": "baselines/223-173.png", "width": 402, "height": 2983, "bytes": 241659, "sha256": "7c84d0739826b9fd38402a0acd0322c85ad5f4a24a3f42c4fa1d06f921bf96f1", "crossCheck": "byte-identical to the R2 public-glossary candidate export recorded in docs/overhaul/FIGMA-FIDELITY-BASELINES.md"}
+      {"node": "223:173", "frameName": "glossary-page", "path": "baselines/223-173.png", "width": 402, "height": 2983, "bytes": 241659, "sha256": "7c84d0739826b9fd38402a0acd0322c85ad5f4a24a3f42c4fa1d06f921bf96f1", "crossCheck": "byte-identical to the R2 public-glossary candidate export recorded in docs/overhaul/FIGMA-FIDELITY-BASELINES.md"},
+      {"node": "36:18", "frameName": "igbokal-desktop", "path": "baselines/36-18.png", "width": 1440, "height": 1216, "bytes": 356485, "sha256": "0d2b17116b2fd9b04bdcbef5f0ce1843040c781cf201ce1a680b46b444578dfb", "crossCheck": "first governed scale-1 capture; Figma's 1215.304565px fractional extent rasters to 1216 whole pixels; source-only Archive and Calculation labels remain an explicit owner override and are not restored in code"},
+      {"node": "38:4469", "frameName": "desktop cal", "path": "baselines/38-4469.png", "width": 775, "height": 1262, "bytes": 171677, "sha256": "035e96df929488ce6823dbb7a3ba715d29129584add171c8a7c52d2bb6121616", "crossCheck": "first governed scale-1 capture; the separate scale-2 controlled-fidelity baseline remains governed by docs/overhaul/FIGMA-FIDELITY-BASELINES.md"},
+      {"node": "39:539", "frameName": "reflection-modal", "path": "baselines/39-539.png", "width": 775, "height": 1356, "bytes": 90276, "sha256": "de8ff1114b0d0e843198fa9045b2583a785343ec11fd141654daa7f0a0c013df", "crossCheck": "first governed scale-1 capture; evidence does not resolve DEC-REFLECTION-FONTS or promote acceptance"},
+      {"node": "260:3116", "frameName": "QR code-modal", "path": "baselines/260-3116.png", "width": 638, "height": 818, "bytes": 29823, "sha256": "199df6c098161eaaaa60b69be33c187c9386c3debfafb5a0299e3db3e02a1cbd", "crossCheck": "first governed native baseline; source QR payload and typo-bearing copy are owner-functional overrides, so the production app-origin QR and corrected copy remain authoritative"}
     ]
   },
   "sourceReuses": [

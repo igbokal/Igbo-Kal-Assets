@@ -47,3 +47,32 @@ nodes; no prior baseline existed anywhere.
 The same files remain the raster inputs for `e2e/svg-fidelity.spec.ts` through
 the gitignored `docs/reference/figma/` mirror; this corpus copy is the governed
 canonical source of those bytes.
+
+## Desktop and QR capture batch (2026-08-26)
+
+The same read-only procedure captured four Page-1 desktop/desktop-modal targets
+from live Figma file version `2391359459346996176`. The full-file pull walked
+5,335 Page-1 nodes and confirmed all four target IDs before any render download.
+
+| Node | Frame | PNG | Dimensions | Bytes | SHA-256 |
+|---|---|---|---:|---:|---|
+| `36:18` | igbokal-desktop | `36-18.png` | 1440×1216 | 356,485 | `0d2b17116b2fd9b04bdcbef5f0ce1843040c781cf201ce1a680b46b444578dfb` |
+| `38:4469` | desktop cal | `38-4469.png` | 775×1262 | 171,677 | `035e96df929488ce6823dbb7a3ba715d29129584add171c8a7c52d2bb6121616` |
+| `39:539` | reflection-modal | `39-539.png` | 775×1356 | 90,276 | `de8ff1114b0d0e843198fa9045b2583a785343ec11fd141654daa7f0a0c013df` |
+| `260:3116` | QR code-modal | `260-3116.png` | 638×818 | 29,823 | `199df6c098161eaaaa60b69be33c187c9386c3debfafb5a0299e3db3e02a1cbd` |
+
+Figma covers a fractional frame extent with whole output pixels. Node `36:18`
+has local size `1440×1215.3045654296875`, so its scale-1 PNG correctly has an
+IHDR of `1440×1216`; integer-sized targets remain byte-for-pixel equal to their
+local size.
+
+These files close the missing-native-baseline evidence gap only. They do not
+promote visual acceptance. In particular:
+
+- `36:18` still contains source-only `Archive` and `Calculation` text nodes.
+  The owner's removal ruling supersedes them; production must not restore them.
+- `260:3116` still contains typo-bearing install copy and a mock QR payload.
+  `DEC-QR-COPY` and the approved `https://app.igbokal.com/` payload supersede
+  those regions, so controlled pixel analysis must record them as masked owner
+  overrides rather than regress production to the source defects.
+- `39:539` remains unaccepted while `DEC-REFLECTION-FONTS` is open.
