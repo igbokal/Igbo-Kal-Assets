@@ -19,6 +19,9 @@ The directory layout deliberately retains the Figma implementation slice:
 - `mobile-calendar-102-81/`
 - `mobile-reflection-102-560/`
 - `desktop-36-18/`
+- `desktop-install-qr-260-3116/` — exact official Figma SVG exports for
+  QR-modal decoration nodes `260:3117` and `260:3145`, plus the back glyph
+  `260:3144`; see the local provenance register.
 - `admin/capsules/`
 - `admin/dashboard/`
 - `admin/glossary/`

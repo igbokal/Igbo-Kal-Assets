@@ -284,6 +284,21 @@
       "sha256": "1e796e212524fb6273f07c6ed98dee5d8af236ec8f6250ee0f01823b01c43f4f"
     },
     {
+      "path": "desktop-install-qr-260-3116/back-glyph.svg",
+      "bytes": 391,
+      "sha256": "9805cd221281d78119ff66d062792d20c6228cc4ca75ad328392e5740dfbee04"
+    },
+    {
+      "path": "desktop-install-qr-260-3116/qr-decoration-bottom.svg",
+      "bytes": 10182,
+      "sha256": "b8985493bf1f301a460b62f3da42cc09b89b7adb5a45430806e8f49652df719e"
+    },
+    {
+      "path": "desktop-install-qr-260-3116/qr-decoration-top.svg",
+      "bytes": 10150,
+      "sha256": "2f231e030e833e35064d6563cb66040e2199bfcd07311f7c6980aea6f0707569"
+    },
+    {
       "path": "identity/igbokal-app-icon-192.png",
       "bytes": 8172,
       "sha256": "8d2a31a3b779f2432436e707cf5b505eee49a7d49adeb1c2e70809657166a0dd"
