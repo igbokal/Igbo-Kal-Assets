@@ -10,6 +10,7 @@ const installRoot = join(repositoryRoot, 'assets', 'install');
 const manifestPath = join(installRoot, 'manifest.json');
 const publicationProofPath = join(installRoot, 'publication-proof.json');
 const page1ManifestPath = join(repositoryRoot, 'assets', 'page1', 'figma', 'manifest.json');
+const page1PublicRoot = 'https://igbokal.github.io/Igbo-Kal-Assets/assets/page1/figma/';
 const MAX_BYTES = 25 * 1024 * 1024;
 const ONE_DRIVE_PATTERN = /(?:^|[\\/])OneDrive(?:\s*-\s*[^\\/]+)?(?:[\\/]|$)/i;
 const CANONICAL_FILE_NAME = /^[a-z0-9]+(?:-[a-z0-9]+)*\.(?:json|md|png)$/;
@@ -191,6 +192,10 @@ for (const baseline of manifest.howToFigmaBaselines) {
   const baselineBytes = await readFile(join(dirname(page1ManifestPath), baseline.path));
   if (baselineBytes.length !== baseline.bytes || sha256(baselineBytes) !== baseline.sha256) {
     throw new Error(`How-to baseline integrity failed: ${baseline.path}`);
+  }
+  const expectedPublicUrl = new URL(baseline.path, page1PublicRoot).href;
+  if (baseline.publicUrl !== expectedPublicUrl) {
+    throw new Error(`How-to baseline public URL drifted: ${baseline.path}`);
   }
 }
 

@@ -16,7 +16,8 @@ maskable pair.
 ## How-to baseline handoff
 
 These already-governed Page 1 captures may support a design-labelled How-to
-gallery after publication:
+gallery. Their explicit `publicUrl` values in `manifest.json` use the existing
+Page 1 CDN path; they do not inherit the install-derivative prefix below:
 
 - `../page1/figma/baselines/102-16.png` — mobile landing
 - `../page1/figma/baselines/157-126.png` — mobile login
@@ -42,8 +43,10 @@ The stable prefix will be:
 
 `https://igbokal.github.io/Igbo-Kal-Assets/assets/install/`
 
-`publication-proof.json` remains `unpublished` until the Assets commit is on
-GitHub Pages and the remote manifest plus every consumed file has been fetched
-and SHA-256 verified. Consumers must keep using the local bridge until then.
+`publication-proof.json` remains `unpublished` until the new install derivatives
+are on GitHub Pages and the remote manifest plus every consumed install file has
+been fetched and SHA-256 verified. The Page 1 baseline files predate this commit;
+consumers may use only the exact baseline `publicUrl` entries whose remote bytes
+match the manifest hash.
 
 Run `node scripts/verify-install-assets.mjs` from this repository before handoff.
