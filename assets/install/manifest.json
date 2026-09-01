@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "publishedBaseUrl": "https://igbokal.github.io/Igbo-Kal-Assets/assets/install/",
+  "backgroundColor": "#fefee4",
+  "sources": [
+    {
+      "path": "assets/page1/figma/identity/igbokal-app-icon-192.png",
+      "bytes": 8172,
+      "sha256": "8d2a31a3b779f2432436e707cf5b505eee49a7d49adeb1c2e70809657166a0dd"
+    },
+    {
+      "path": "assets/page1/figma/identity/igbokal-app-icon-512.png",
+      "bytes": 18269,
+      "sha256": "cc687efd58909b5b3f6be20bfece6d8334717c4a5a4c99b44a793dc11c5dd853"
+    }
+  ],
+  "derivation": {
+    "tool": "sharp",
+    "toolVersion": "0.34.5",
+    "resizeKernel": "lanczos3",
+    "pngCompressionLevel": 9,
+    "adaptiveFiltering": false,
+    "identityPolicy": "Deterministic platform derivative; not an AI-generated or acceptance-promoted identity."
+  },
+  "maskable": {
+    "safeRadiusRatio": 0.4,
+    "insetScale": 0.9375,
+    "canvas": "fully-opaque",
+    "nonCriticalCropArea": "solid #fefee4 background only"
+  },
+  "assets": [
+    {
+      "path": "igbokal-maskable-icon-192.png",
+      "role": "maskable",
+      "width": 192,
+      "height": 192,
+      "bytes": 8784,
+      "sha256": "63d2f8640de4352e9ec045c9ccbcc4f94b6b38c96fb885d72d7fb4437b233a72"
+    },
+    {
+      "path": "igbokal-maskable-icon-512.png",
+      "role": "maskable",
+      "width": 512,
+      "height": 512,
+      "bytes": 22242,
+      "sha256": "ccbfe428b4e36b17683f95b7896043bd1762541d83f9928a2b409f2a9cfe5a63"
+    },
+    {
+      "path": "igbokal-apple-touch-icon-180.png",
+      "role": "apple-touch-icon",
+      "width": 180,
+      "height": 180,
+      "bytes": 8020,
+      "sha256": "e040e81851458b2ff1457da593398ac114f43106c14a68f94a5fd55f0890e1de"
+    }
+  ],
+  "howToFigmaBaselines": [
+    {
+      "path": "baselines/102-16.png",
+      "caption": "Mobile landing — Figma design reference",
+      "bytes": 73875,
+      "sha256": "2d2752389d5933e9eeba1c4f47703a36a02cfd3f4e017e6f1f6eda336450530c"
+    },
+    {
+      "path": "baselines/157-126.png",
+      "caption": "Mobile login — Figma design reference",
+      "bytes": 23123,
+      "sha256": "fd061e34afb6179cd97bcbc72e57fc55779809dccddd10720b68196d49b5af7a"
+    },
+    {
+      "path": "baselines/102-81.png",
+      "caption": "Mobile Kalendar — Figma design reference",
+      "bytes": 119946,
+      "sha256": "096aeeb5c4b76a9117923126acefae5bf53723f62cf411d128e72536bd028f4d"
+    },
+    {
+      "path": "baselines/226-898.png",
+      "caption": "Month selector — Figma design reference",
+      "bytes": 73002,
+      "sha256": "555bd2550a93de13d3501adb810a17b0379b4e44d5c3d0334235b141bfc124bd"
+    },
+    {
+      "path": "baselines/102-560.png",
+      "caption": "Reflection dialog — Figma design reference",
+      "bytes": 39945,
+      "sha256": "d082c2772a271fd8e8ad146a161d4a303f0270b59c127dd21d176289d24e061a"
+    },
+    {
+      "path": "baselines/223-173.png",
+      "caption": "Glossary — Figma design reference",
+      "bytes": 241659,
+      "sha256": "7c84d0739826b9fd38402a0acd0322c85ad5f4a24a3f42c4fa1d06f921bf96f1"
+    },
+    {
+      "path": "baselines/38-4469.png",
+      "caption": "Desktop month — Figma design reference",
+      "bytes": 171677,
+      "sha256": "035e96df929488ce6823dbb7a3ba715d29129584add171c8a7c52d2bb6121616"
+    }
+  ],
+  "runtimeScreenshots": {
+    "status": "blocked-awaiting-runtime-capture",
+    "requiredOrigins": [
+      "https://app.igbokal.com/"
+    ],
+    "requiredViewports": [
+      "393x852",
+      "412x915"
+    ],
+    "requirements": [
+      "Capture the actual app-origin runtime, not a Figma baseline.",
+      "Use deterministic seeded state and disable animations.",
+      "Record route, viewport, source commit, bytes, and SHA-256.",
+      "Independently inspect every capture before manifest consumption."
+    ],
+    "assets": []
+  }
+}
