@@ -41,7 +41,7 @@
   <!-- ══ 1. DOME (coloured cap with shadow + inner glow) ══ -->
   <g filter="url(#domeShadow)">
     <path d="M180 441.6 A360 375.36 0 0 1 900 441.6 Q540 463.6 180 441.6"
-      fill="#19a457" stroke="#222020" stroke-width="3.5"/>
+      fill="#d36137" stroke="#222020" stroke-width="3.5"/>
     <path d="M180 441.6 A360 375.36 0 0 1 900 441.6 Q540 457.6 180 441.6"
       fill="url(#domeGlow)"/>
   </g>
@@ -49,7 +49,7 @@
   <!-- textSymbol letter in dome (faint) -->
   <text x="540" y="336.4992" text-anchor="middle"
     font-family="'Segoe UI','Noto Sans',sans-serif" font-weight="900"
-    font-size="140" fill="#ffffff" opacity="0.22">I</text>
+    font-size="140" fill="#ffffff" opacity="0.22">A</text>
 
   
 
@@ -59,7 +59,7 @@
   <!-- textSymbol letter -->
   <text x="540" y="643.9680000000001" text-anchor="middle"
     font-family="'Segoe UI','Noto Sans',sans-serif" font-weight="900"
-    font-size="96" fill="#1e1e65" filter="url(#textShadow)">I</text>
+    font-size="96" fill="#1e1e65" filter="url(#textShadow)">A</text>
   <!-- Divider -->
   <line x1="244" y1="768" x2="836" y2="768"
     stroke="#222020" stroke-width="2"/>
@@ -71,7 +71,7 @@
     <!-- Market name header -->
     <text x="540" y="833" text-anchor="middle"
       font-family="'Source Sans 3','Segoe UI',sans-serif" font-weight="800"
-      font-size="62" fill="#22c068" letter-spacing="3" filter="url(#textShadow)">Àfọ̀ — 13</text>
+      font-size="62" fill="#e87a55" letter-spacing="3" filter="url(#textShadow)">Ǹkwọ — 13</text>
 
     <!-- Big number "day/month" -->
     <text x="490" y="1028" text-anchor="middle"
@@ -109,7 +109,7 @@
   <!-- ══ 4. MONTH-THEME BAND ══ -->
   <text x="540" y="1526.4" text-anchor="middle"
     font-family="'Source Sans 3','Segoe UI',sans-serif" font-weight="800"
-    font-size="27" fill="#22c068" letter-spacing="2">MONTH FOUR (4): FORM · CELEBRATE TOGETHERNESS</text>
+    font-size="27" fill="#e87a55" letter-spacing="2">MONTH FOUR (4): FORM · CELEBRATE TOGETHERNESS</text>
   <text x="540" y="1597.44" text-anchor="middle"
     font-family="'Georgia','Noto Serif',serif" font-weight="600" font-style="italic"
     font-size="24" fill="#646466">Ọ́nwá Ánọ̄ · Ìzù 4</text>
@@ -135,7 +135,7 @@
     font-size="22" fill="#646466">igbokal.com</text>
 
   <!-- Foot accent tab -->
-  <rect x="512" y="1973.6000000000001" width="56" height="7" rx="3" fill="#19a457"/>
+  <rect x="512" y="1973.6000000000001" width="56" height="7" rx="3" fill="#d36137"/>
 
   <!-- ══ Outer body outline (with shadow) ══ -->
   <g filter="url(#bodyShadow)">
