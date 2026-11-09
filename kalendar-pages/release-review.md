@@ -1,6 +1,10 @@
 # Public kalendar PDF release review — HOLD MERGE
 
-This branch prepares public, non-personalized kalendar pages for parent review. Do not merge, enable auto-merge, or deploy until the parent confirms actual PDF parsing/assembly validation and resolves the source-binding checkpoint below. Ready renderer status is not release authorization.
+This branch prepares public, non-personalized kalendar pages for parent review. Do not merge, enable auto-merge, or deploy until the parent resolves the source-binding checkpoint below. Ready renderer status is not release authorization.
+
+Parent confirmation received 2026-11-08: all 56 PDFs passed SHA256, size, actual Letter/one-page parsing, day-anchor totals 365/365/366/365, and actual copyPages assembly (approximately 7.4 MB per year). This is parent-reported PDF validation, in addition to the direct asset integrity checks below. Root source checkpoint is still pending before promotion.
+
+Card rendering correctly stopped on Card 2 overflow. No card files or incomplete card manifests are included; no fit constraints were changed. No `diagnostic-assembled-year.pdf` was copied.
 
 ## Canonical CDN-relative paths
 
