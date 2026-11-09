@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/google/fonts",
+  "revision": "5bb28733cec313b63fbd415b574b5ae35c8aa8b8",
+  "transformation": "none; byte-identical upstream TrueType payloads, local filename changes only",
+  "publicationStatus": "local-preparation-only",
+  "evidence": [
+    {
+      "path": "assets/fonts/work-sans/ofl.txt",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/worksans/OFL.txt",
+      "sha256": "749aca05078664ce682dce1b1b10096ac397cb088c1a6df4e1bb56f0092a9272",
+      "bytes": 4396
+    },
+    {
+      "path": "assets/fonts/work-sans/metadata.pb",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/worksans/METADATA.pb",
+      "sha256": "b55627dfda8d7bdb0b2500b0f6b2b942c1f8242bf756ca5c98e8a7cd22b28946",
+      "bytes": 1267
+    },
+    {
+      "path": "assets/fonts/eb-garamond/ofl.txt",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/ebgaramond/OFL.txt",
+      "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7",
+      "bytes": 4398
+    },
+    {
+      "path": "assets/fonts/eb-garamond/metadata.pb",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/ebgaramond/METADATA.pb",
+      "sha256": "be94098be975a66281842ed599baefa14959eff9da14c87250678e905f6043f2",
+      "bytes": 1457
+    },
+    {
+      "path": "assets/fonts/ribeye/ofl.txt",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/ribeye/OFL.txt",
+      "sha256": "9acc45e5ba18b5b38868fad1f51c03df4f5d7a43061d46314843de45c4444233",
+      "bytes": 4449
+    },
+    {
+      "path": "assets/fonts/ribeye/metadata.pb",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/ribeye/METADATA.pb",
+      "sha256": "507f592ccc71e4433483fa7223fc3eb940e2c764dd11b599d3a51c153ec9fe9d",
+      "bytes": 626
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Work Sans",
+      "style": "normal",
+      "weight": "100 900",
+      "path": "assets/fonts/work-sans/work-sans-regular-variable.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/worksans/WorkSans%5Bwght%5D.ttf",
+      "sha256": "f50f61f2ba738e239442d40bf1069adb195c224b6a5a73a581fc2f3ed62a9f63",
+      "bytes": 361072,
+      "format": "truetype",
+      "mimeType": "font/ttf",
+      "version": [
+        "Version 2.012"
+      ],
+      "copyright": "Copyright 2019 The Work Sans Project Authors (https://github.com/weiweihuanghuang/Work-Sans)",
+      "license": "OFL-1.1",
+      "licensePath": "assets/fonts/work-sans/ofl.txt",
+      "licenseSha256": "749aca05078664ce682dce1b1b10096ac397cb088c1a6df4e1bb56f0092a9272",
+      "metadataPath": "assets/fonts/work-sans/metadata.pb",
+      "metadataSha256": "b55627dfda8d7bdb0b2500b0f6b2b942c1f8242bf756ca5c98e8a7cd22b28946",
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "default": 400,
+          "max": 900
+        }
+      ]
+    },
+    {
+      "family": "Work Sans",
+      "style": "italic",
+      "weight": "100 900",
+      "path": "assets/fonts/work-sans/work-sans-italic-variable.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/worksans/WorkSans-Italic%5Bwght%5D.ttf",
+      "sha256": "0a9f935ea490d3477fc97e40248f356c29bce11a1973939056c4316b122341ec",
+      "bytes": 336756,
+      "format": "truetype",
+      "mimeType": "font/ttf",
+      "version": [
+        "Version 2.012"
+      ],
+      "copyright": "Copyright 2019 The Work Sans Project Authors (https://github.com/weiweihuanghuang/Work-Sans)",
+      "license": "OFL-1.1",
+      "licensePath": "assets/fonts/work-sans/ofl.txt",
+      "licenseSha256": "749aca05078664ce682dce1b1b10096ac397cb088c1a6df4e1bb56f0092a9272",
+      "metadataPath": "assets/fonts/work-sans/metadata.pb",
+      "metadataSha256": "b55627dfda8d7bdb0b2500b0f6b2b942c1f8242bf756ca5c98e8a7cd22b28946",
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "default": 400,
+          "max": 900
+        }
+      ]
+    },
+    {
+      "family": "EB Garamond",
+      "style": "normal",
+      "weight": "400 800",
+      "path": "assets/fonts/eb-garamond/eb-garamond-regular-variable.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf",
+      "sha256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027",
+      "bytes": 851176,
+      "format": "truetype",
+      "mimeType": "font/ttf",
+      "version": [
+        "Version 1.003"
+      ],
+      "copyright": "Copyright 2017 The EB Garamond Project Authors (https://github.com/octaviopardo/EBGaramond12)",
+      "license": "OFL-1.1",
+      "licensePath": "assets/fonts/eb-garamond/ofl.txt",
+      "licenseSha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7",
+      "metadataPath": "assets/fonts/eb-garamond/metadata.pb",
+      "metadataSha256": "be94098be975a66281842ed599baefa14959eff9da14c87250678e905f6043f2",
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 400,
+          "default": 400,
+          "max": 800
+        }
+      ]
+    },
+    {
+      "family": "EB Garamond",
+      "style": "italic",
+      "weight": "400 800",
+      "path": "assets/fonts/eb-garamond/eb-garamond-italic-variable.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/ebgaramond/EBGaramond-Italic%5Bwght%5D.ttf",
+      "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+      "bytes": 754468,
+      "format": "truetype",
+      "mimeType": "font/ttf",
+      "version": [
+        "Version 1.003"
+      ],
+      "copyright": "Copyright 2017 The EB Garamond Project Authors (https://github.com/octaviopardo/EBGaramond12)",
+      "license": "OFL-1.1",
+      "licensePath": "assets/fonts/eb-garamond/ofl.txt",
+      "licenseSha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7",
+      "metadataPath": "assets/fonts/eb-garamond/metadata.pb",
+      "metadataSha256": "be94098be975a66281842ed599baefa14959eff9da14c87250678e905f6043f2",
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 400,
+          "default": 400,
+          "max": 800
+        }
+      ]
+    },
+    {
+      "family": "Ribeye",
+      "style": "normal",
+      "weight": "400",
+      "path": "assets/fonts/ribeye/ribeye-regular.ttf",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/ribeye/Ribeye-Regular.ttf",
+      "sha256": "c384b009dba7b9c973402427716ccf2a57dc5e44b30cfda45fc0ecc5cf238bcb",
+      "bytes": 78492,
+      "format": "truetype",
+      "mimeType": "font/ttf",
+      "version": [
+        "Version 1.000"
+      ],
+      "copyright": "Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com), with Reserved\rFont Name \"Ribeye\"",
+      "license": "OFL-1.1",
+      "licensePath": "assets/fonts/ribeye/ofl.txt",
+      "licenseSha256": "9acc45e5ba18b5b38868fad1f51c03df4f5d7a43061d46314843de45c4444233",
+      "metadataPath": "assets/fonts/ribeye/metadata.pb",
+      "metadataSha256": "507f592ccc71e4433483fa7223fc3eb940e2c764dd11b599d3a51c153ec9fe9d",
+      "axes": []
+    }
+  ]
+}
