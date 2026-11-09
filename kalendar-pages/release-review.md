@@ -1,8 +1,8 @@
 # Public kalendar PDF release review — HOLD MERGE
 
-This branch prepares public, non-personalized kalendar pages for parent review. Do not merge, enable auto-merge, or deploy until the parent resolves the source-binding checkpoint below. Ready renderer status is not release authorization.
+This branch prepares public, non-personalized kalendar pages for parent review. Do not merge, enable auto-merge, or deploy until root PR remote checks are green and the parent explicitly confirms promotion. Ready renderer status is not release authorization.
 
-Parent confirmation received 2026-11-08: all 56 PDFs passed SHA256, size, actual Letter/one-page parsing, day-anchor totals 365/365/366/365, and actual copyPages assembly (approximately 7.4 MB per year). This is parent-reported PDF validation, in addition to the direct asset integrity checks below. Root source checkpoint is still pending before promotion.
+Parent confirmation received 2026-11-08: all 56 PDFs passed SHA256, size, actual Letter/one-page parsing, day-anchor totals 365/365/366/365, and actual copyPages assembly (approximately 7.4 MB per year). This is parent-reported PDF validation, in addition to the direct asset integrity checks below. This confirmation also applies to the new checkpoint-regenerated sets, as confirmed by the parent after replacement. Root remote checks and explicit parent promotion remain pending.
 
 Card rendering correctly stopped on Card 2 overflow. No card files or incomplete card manifests are included; no fit constraints were changed. No `diagnostic-assembled-year.pdf` was copied.
 
@@ -12,10 +12,10 @@ Each directory contains unchanged `manifest.json` and `month-01.pdf` through `mo
 
 | Year | Directory | Manifest SHA256 |
 | --- | --- | --- |
-| 5003 | `kalendar-pages/5003/dd20aa3d5b9199d2ce681fbb73d8e266560dffd6189a103e549ca655129ebe0d/` | `4cadb02be8db5f9600e8fff5d424e529c166950c74ad769a8645f549f7678565` |
-| 5004 | `kalendar-pages/5004/1d37e6424442545cd1f5fe9528b06974fa4a2b5a27596f8d06f612a5e3c2dbe3/` | `fa6c71131f09da122be2238e8319806a4de04eab901dbf5d3a84ceee58ca47d2` |
-| 5005 | `kalendar-pages/5005/fdb2a075c2b99b796ab8ad163da874119791cc7235e20b23dbb7dbc96a419ddb/` | `35c3f35cd415992b5276c6bbf01a5006a310534aaa40cb5c46daef3c26963436` |
-| 5006 | `kalendar-pages/5006/2aa5fabe22de45334aea39f81d6abe0701722d2bea1867ee12cda2fd7c6db98d/` | `3d4c05415f8fbe32240e803a8761f33e9234f6cf9b013954b7aeb47589b7ee95` |
+| 5003 | `kalendar-pages/5003/b2e84e6fa59c2068fad1b253aa98421c0b85f760370d5412e824c8e569e6e71c/` | `d0fc796ed8ea193427084966318cd05d0e37b3842376720f6b677597e00520bc` |
+| 5004 | `kalendar-pages/5004/4273388338f867fdbf45fb4f11d2ed9408fdb069f2dc187dc94ee94f2315ea68/` | `2acb7a928b0217b1930fb8a690b54c104e5bb014b4879c1b6550ced6e1deb958` |
+| 5005 | `kalendar-pages/5005/cd6330c7d61f5e5942b8ad4ea744027dbb96e1fe9b20d27bc6c5a86b4155573e/` | `030d2f6751c3ff7ef0b477876cd9aab48f27590f6e153dfbdd309e0952d09ffd` |
+| 5006 | `kalendar-pages/5006/aeee757b38a3c42bff4096787e65141baab9daf533e23dd8bb34b0b7642cfa0d/` | `b7935efbf33b2cc75bbe0261c14fc6f1f678bcc4e8bb1e9729ab908f0df59414` |
 
 After authorized publication, prefix paths with `https://igbokal.github.io/Igbo-Kal-Assets/`. Manifest file paths are relative to the CDN root, NOT relative to the manifest URL. Do not append file paths to the nested manifest directory.
 
@@ -37,15 +37,12 @@ node scripts/prepare-export-fonts.mjs
 
 The first command validates locally without network. The second re-fetches only immutable official public Google Fonts upstream URLs and validates licensed, unmodified TTF payloads.
 
-## Source-revision binding issue — parent decision required
+## Checkpoint regeneration and remaining release gate
 
-All manifests identify `sourceRevision: 767923db82405dc9b9363240abcdcea5e6901eba`. Parent reports the renderer was run with dirty portal code. Inspection of the rendering implementation confirms that renderHash is computed over sourceRevision, the actual built-bundle hash, pipeline hash (render.mjs + fonts.mjs), browser, year, layout inputs, and font hashes. Therefore the content-addressed renderHash includes dirty-bundle input rather than being a revision-only cache key.
+The parent regenerated all four sets from committed source checkpoint `009e10035fdd98f9eef677cb3ca7dc16feb28505`. This update imports those genuine new renderer manifests and manifest-listed files byte-for-byte; it does not rewrite sourceRevision. The prior four draft-only sets were removed by exact tracked-file allowlist after verifying they did not exist at the Assets base commit. Their original Foundation files and prior Git history remain intact. Fonts/licenses are unchanged.
 
-However **bundleHash and pipelineHash are not separately retained in these manifests**. These manifests and the nominal sourceRevision alone cannot reproduce or independently reconstruct that renderHash preimage, nor prove which dirty source changes produced it. All source PDFs/manifests were preserved exactly; no sourceRevision rewrite or fabricated bundle evidence was added.
+Parent confirms the newly regenerated 56 PDFs pass SHA256, byte sizes, actual Letter/one-page parsing, anchors 365/365/366/365, and actual copyPages assembly. Parent also confirms this checkpoint contains the exact rendering code. This is parent validation evidence, distinct from this branch's direct destination hash/contract tests.
 
-Before final publication the parent must review/record the actual PDF verification and either:
+The renderer hashes the actual built bundle and pipeline into renderHash. Separate bundleHash/pipelineHash fields are still not exposed in these schema-v1 manifests; no fabricated build evidence has been added.
 
-1. checkpoint the exact rendering source, retain its build/pipeline evidence and explicitly approve these immutable existing artifact hashes; or
-2. regenerate from a clean checkpoint, yielding new renderHash paths/manifests and a separately reviewed artifact set.
-
-Do not silently relabel or overwrite these preserved objects. This draft PR is artifact preparation only, not proof of personalized API integration, exact visual acceptance, or deployment.
+**HOLD MERGE:** root PR remote checks must be green and the parent must explicitly confirm promotion. Do not enable auto-merge or deploy in advance. Exact API rendering remains disabled by default and is not production-enabled. Card 2 overflow remains fail-closed; there are no card artifacts or diagnostic assemblies in this release.

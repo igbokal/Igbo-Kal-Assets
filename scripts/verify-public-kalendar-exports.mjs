@@ -10,10 +10,10 @@ if (arg.length > 1 || (arg.length && !arg[0].startsWith('--import='))) throw Err
 const source = arg.length ? await realpath(resolve(arg[0].slice(9))) : null;
 if ([root, source].filter(Boolean).some(p => /onedrive/i.test(p))) throw Error('OneDrive forbidden');
 const hashes = {
-  5003: 'dd20aa3d5b9199d2ce681fbb73d8e266560dffd6189a103e549ca655129ebe0d',
-  5004: '1d37e6424442545cd1f5fe9528b06974fa4a2b5a27596f8d06f612a5e3c2dbe3',
-  5005: 'fdb2a075c2b99b796ab8ad163da874119791cc7235e20b23dbb7dbc96a419ddb',
-  5006: '2aa5fabe22de45334aea39f81d6abe0701722d2bea1867ee12cda2fd7c6db98d',
+  5003: 'b2e84e6fa59c2068fad1b253aa98421c0b85f760370d5412e824c8e569e6e71c',
+  5004: '4273388338f867fdbf45fb4f11d2ed9408fdb069f2dc187dc94ee94f2315ea68',
+  5005: 'cd6330c7d61f5e5942b8ad4ea744027dbb96e1fe9b20d27bc6c5a86b4155573e',
+  5006: 'aeee757b38a3c42bff4096787e65141baab9daf533e23dd8bb34b0b7642cfa0d',
 };
 const sha = b => createHash('sha256').update(b).digest('hex');
 const provenance = JSON.parse(await readFile(resolve(root, 'assets/fonts/font-provenance.json')));
@@ -32,7 +32,7 @@ for (const [yearText, renderHash] of Object.entries(hashes)) {
  const m = JSON.parse(manifestBytes);
  const allowed = ['schemaVersion','status','rendererVersion','sourceRevision','renderHash','browserVersion','kind','layout','igboYear','fonts','files'];
  if (Object.keys(m).some(k => !allowed.includes(k))) throw Error('Unexpected/private manifest field');
- if (m.schemaVersion !== 1 || m.status !== 'ready' || m.kind !== 'month' || m.layout !== 'mobile-month-v1' || m.rendererVersion !== 'shared-react-1' || m.igboYear !== year || m.renderHash !== renderHash || m.sourceRevision !== '767923db82405dc9b9363240abcdcea5e6901eba' || m.files.length !== 14 || m.fonts.length !== 5) throw Error('Invalid public year manifest');
+ if (m.schemaVersion !== 1 || m.status !== 'ready' || m.kind !== 'month' || m.layout !== 'mobile-month-v1' || m.rendererVersion !== 'shared-react-1' || m.igboYear !== year || m.renderHash !== renderHash || m.sourceRevision !== '009e10035fdd98f9eef677cb3ca7dc16feb28505' || m.files.length !== 14 || m.fonts.length !== 5) throw Error('Invalid public year manifest');
  const seenFonts = new Set();
  for (const f of m.fonts) {
    const p = provenance.fonts.find(p => p.family === f.family && p.style === f.style);
@@ -72,4 +72,4 @@ if (source) {
  }
 }
 console.log(`Verified ${count} public PDFs (${totalBytes} bytes), four unchanged manifests, 14 periods/year, 11 font/provenance files. ${source ? 'Copied only allowlisted files; run again without --import to verify destinations.' : 'Destination integrity passed.'}`);
-console.log('PDF parse/assembly and dirty-source reproducibility review remain parent release gates; do not merge automatically.');
+console.log('Regenerated PDF parse/assembly and source pre-push checks remain parent release gates; do not merge automatically.');
