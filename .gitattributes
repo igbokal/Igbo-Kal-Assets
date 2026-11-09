@@ -1,0 +1,7 @@
+# Keep hash-pinned upstream evidence and renderer output byte-identical.
+/assets/fonts/**/*.ttf -text
+/assets/fonts/**/ofl.txt -text whitespace=-blank-at-eol
+/assets/fonts/**/metadata.pb -text
+/assets/fonts/font-provenance.json -text
+/kalendar-pages/**/*.pdf -text
+/kalendar-pages/**/manifest.json -text
